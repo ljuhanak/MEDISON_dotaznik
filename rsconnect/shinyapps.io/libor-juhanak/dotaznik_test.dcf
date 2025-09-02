@@ -1,0 +1,10 @@
+name: dotaznik_test
+title:
+username: libor-juhanak
+account: libor-juhanak
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15261242
+bundleId: 10850818
+url: https://libor-juhanak.shinyapps.io/dotaznik_test/
+version: 1

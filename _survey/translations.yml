@@ -1,0 +1,19 @@
+cs:
+  cancel: Zrušit
+  confirm_exit: Ano, ukončit
+  sure_exit: Opravdu chcete ukončit dotazník?
+  submit_exit: Odeslat a ukončit
+  warning: Upozornění
+  required: Please answer all required questions before proceeding.
+  rating_title: Before you go...
+  rating_text: 'Rate your survey experience:'
+  rating_scale: from 1-poor to 5-excellent
+  next: Další strana
+  exit: Ukončit dotazník
+  close_tab: Pro ukončení dotaznílku, prosím, zavřete tuto záložku manuálně.
+  choose_option: Vyberte možnost...
+  click: Click here
+  redirect: Redirecting in
+  seconds: vteřin
+  new_tab: Opens in a new tab
+  redirect_error: 'Error: This text won''t trigger any redirection...'

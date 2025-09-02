@@ -1,0 +1,1016 @@
+# ! JUST READ - don't change the content of this file
+# Question structure extracted from survey.html
+jmeno:
+  type: text
+  label: Jméno a příjmení
+info_souhlas_1:
+  type: select
+  label: Souhlasím / Nesouhlasím se svou účastí v uvedeném výzkumném projektu a rozumím
+    tomu, že účast je dobrovolná a že mohu souhlas odmítnout či odvolat.
+  options:
+    Souhlasím: souhlasim
+    Nesouhlasím: nesouhlasim
+info_souhlas_2:
+  type: select
+  label: Souhlasím / Nesouhlasím s poskytnutím svých osobních údajů ve výše uvedeném
+    rozsahu.
+  options:
+    Souhlasím: souhlasim
+    Nesouhlasím: nesouhlasim
+gender:
+  type: mc
+  label: Jaké je Tvoje pohlaví?
+  options:
+    Žena: zena
+    Muž: muz
+    Nebinární: nebinarni
+    Jiné: jine
+vek:
+  type: numeric
+  label: Kolik Ti je let? (uveď pouze celé číslo v letech, např. 16)
+jazyk_matka:
+  type: mc_multiple
+  label: Jakým jazykem doma mluvíš se svou matkou?
+  options:
+    česky: cestina
+    slovensky: slovenstina
+    vietnamsky: vietnamstina
+    ukrajinsky: ukrajinstina
+    rusky: rustina
+    romsky: romstina
+    jine: jine
+jazyk_otec:
+  type: mc_multiple
+  label: Jakým jazykem doma mluvíš se svým otcem?
+  options:
+    česky: cestina
+    slovensky: slovenstina
+    vietnamsky: vietnamstina
+    ukrajinsky: ukrajinstina
+    rusky: rustina
+    romsky: romstina
+    jine: jine
+matka_vzdelani:
+  type: mc
+  label: Dosáhla Tvá matka vysokoškolského vzdělání?
+  options:
+    Ano: ano
+    Ne: ne
+otec_vzdelani:
+  type: mc
+  label: Dosáhl Tvůj otec vysokoškolského vzdělání?
+  options:
+    Ano: ano
+    Ne: ne
+pocet_pocitacu:
+  type: numeric
+  label: Kolik máte doma počítačů? (počítají se stolní počítače a notebooky, které
+    aktivně používáte) V případě, že žiješ ve více domácnostech, vyber tu, ve které
+    trávíš více času.
+AIq1:
+  type: unknown
+  label: []
+AIq2:
+  type: unknown
+  label: []
+AIq3:
+  type: unknown
+  label: []
+AIq4:
+  type: unknown
+  label: []
+AIq5:
+  type: unknown
+  label: []
+AIq6:
+  type: unknown
+  label: []
+AIq7:
+  type: unknown
+  label: []
+AIq8:
+  type: unknown
+  label: []
+AIq9:
+  type: unknown
+  label: []
+AIq10:
+  type: unknown
+  label: []
+AIq11:
+  type: unknown
+  label: []
+AIq12:
+  type: unknown
+  label: []
+AIq13:
+  type: unknown
+  label: []
+AIq14:
+  type: unknown
+  label: []
+AIq15:
+  type: unknown
+  label: []
+AIq16:
+  type: unknown
+  label: []
+AIq17:
+  type: unknown
+  label: []
+AIq18:
+  type: unknown
+  label: []
+AIq19:
+  type: unknown
+  label: []
+AIq20:
+  type: unknown
+  label: []
+AIq21:
+  type: unknown
+  label: []
+AIq22:
+  type: unknown
+  label: []
+AIq23:
+  type: unknown
+  label: []
+AIq24:
+  type: unknown
+  label: []
+AIq25:
+  type: unknown
+  label: []
+AIq26:
+  type: unknown
+  label: []
+AIq27:
+  type: unknown
+  label: []
+AIq28:
+  type: unknown
+  label: []
+AIq29:
+  type: unknown
+  label: []
+AIq30:
+  type: unknown
+  label: []
+AIq31:
+  type: unknown
+  label: []
+AIq32:
+  type: unknown
+  label: []
+AIq33:
+  type: unknown
+  label: []
+AIq34:
+  type: unknown
+  label: []
+AIq35:
+  type: unknown
+  label: []
+AIq36:
+  type: unknown
+  label: []
+AIq37:
+  type: unknown
+  label: []
+AIq38:
+  type: unknown
+  label: []
+AIq39:
+  type: unknown
+  label: []
+AIq40:
+  type: unknown
+  label: []
+AIq41:
+  type: unknown
+  label: []
+AIq42:
+  type: unknown
+  label: []
+AIq43:
+  type: unknown
+  label: []
+AIq44:
+  type: unknown
+  label: []
+AI_porozumeni:
+  type: matrix
+  label: Přečti si následující tvrzení a zaškrtni, do jaké míry s ním souhlasíš.
+  options:
+    Naprosto nesouhlasím: '1'
+    Spíše nesouhlasím: '2'
+    Neutrální: '3'
+    Spíše souhlasím: '4'
+    Naprosto souhlasím: '5'
+  row:
+    Je důležitější umět se dobře zeptat umělé inteligence (AI) než věcem sám/a rozumět.: '01'
+AI_porozumeni_01:
+  type: mc
+  label: []
+  options:
+    Naprosto nesouhlasím: '1'
+    Spíše nesouhlasím: '2'
+    Neutrální: '3'
+    Spíše souhlasím: '4'
+    Naprosto souhlasím: '5'
+AI_cetnost_vyuzivani:
+  type: matrix
+  label: Následující dvě otázky se týkají toho, jak často využíváš umělou inteligenci.
+    U každé otázky prosím označ, jak často AI používáš.
+  options:
+    Nikdy nebo skoro nikdy: '1'
+    Méně než jednou týdně: '2'
+    Jednou týdně: '3'
+    Jednou denně: '4'
+    Několikrát denně: '5'
+  row:
+    Jak často používáš AI při přípravě do školy?: skola
+    Jak často používáš AI ve svém volném čase?: volny_cas
+AI_cetnost_vyuzivani_skola:
+  type: mc
+  label: []
+  options:
+    Nikdy nebo skoro nikdy: '1'
+    Méně než jednou týdně: '2'
+    Jednou týdně: '3'
+    Jednou denně: '4'
+    Několikrát denně: '5'
+AI_cetnost_vyuzivani_volny_cas:
+  type: mc
+  label: []
+  options:
+    Nikdy nebo skoro nikdy: '1'
+    Méně než jednou týdně: '2'
+    Jednou týdně: '3'
+    Jednou denně: '4'
+    Několikrát denně: '5'
+kontrola_pozornosti_1:
+  type: mc
+  label: V tomto samostatném řádku, prosím, zaškrtni možnost „Spíše nesouhlasím“.
+  options:
+    Rozhodně nesouhlasím: '1'
+    Spíše nesouhlasím: '2'
+    Spíše souhlasím: '3'
+    Rozhodně souhlasím: '4'
+AI_vyuziti_ke_skole:
+  type: mc_multiple_buttons
+  label: Následující položky popisují způsoby využití umělé inteligence (AI) pro školní
+    záležitosti (např. vypracování domácích úkolů, projektů). Označ ty z nich, u kterých
+    jsi v posledním 1 měsíci využil/a libovolný nástroj využívající umělou inteligenci
+    (např. ChatGPT).
+  options:
+    Využití AI pro brainstorming nebo inspiraci pro nápady na domácí úkol, slohovou práci, projekt či jiný úkol do školy: A
+    Využití AI k vysvětlení nového pojmu nebo učební látky: B
+    ? Využití AI k vytvoření fotek nebo obrázků pro školní účely (např. do prezentace
+      či projektu) s uvedením AI nástroje jako zdroje
+    : C
+    ? Využití AI k vyhledání zdrojů, ze kterých lze čerpat při vypracování domácích
+      úkolů, projektů či jiných školních úkolů
+    : D
+    ? Využití AI k získání zpětné vazby a návrhů na zlepšení tebou vypracovaných domácích
+      úkolů, slohových prací, projektů či jiných školních úkolů
+    : E
+    Využití AI k vytváření studijních materiálů jako jsou např. sebetestovací kartičky (flashcards): F
+    Využití AI k tvorbě či úpravě programovacího kódu: G
+    Využití AI k učení se cizího jazyka (např. k vysvětlení gramatiky, k vysvětlení pojmů): H
+    ? Využití AI k vytvoření několika vět a jejich doslovné zkopírování do domácího
+      úkolu, slohové práce, projektu nebo jiného úkolu do školy bez uvedení AI nástroje
+      jako zdroje
+    : I
+    ? Využití AI k vytvoření delšího textu a jeho doslovné zkopírování do domácího
+      úkolu, slohové práce, projektu nebo jiného školního úkolu bez uvedení AI nástroje
+      jako zdroje
+    : J
+    Využití AI přímo při psaní testu nebo písemné práce: K
+    Využití AI k přeformulování textu jiného autora (např. spolužáka) tak, aby vypadal jako vlastní práce: L
+    ? Využití AI k vytvoření delšího textu, který jsi mírně upravil/a tak, aby vypadal
+      jako vlastní práce, bez uvedení AI nástroje jako zdroje
+    : M
+    ? Využití AI k vytvoření shrnutí nebo k zodpovězení otázek týkajících se materiálu
+      (např. knihy), který jsi měl/a dle zadání přečíst sám/sama
+    : 'N'
+    ? Využití AI k úpravě svého domácího úkolu, slohové práce, projektu nebo jiného
+      školního úkolu bez uvedení AI nástroje jako zdroje
+    : O
+    ? Využití AI k vytvoření fotek nebo obrázků pro školní účely (např. do prezentace
+      či projektu) bez uvedení AI nástroje jako zdroje
+    : P
+AI_vztah_kruhy:
+  type: mc
+  label: Vyber ten obrázek, který nejlépe odpovídá Tvému vztahu s AI.
+  options:
+    A: A
+    B: B
+    C: C
+    D: D
+    E: E
+    F: F
+    G: G
+AI_attachment:
+  type: matrix
+  label: Přečti si následující tvrzení a zaškrtni, do jaké míry Tě vystihují.
+  options:
+    Vůbec mě nevystihuje: '1'
+    Spíše mě nevystihuje: '2'
+    Něco mezi: '3'
+    Spíše mě vystihuje: '4'
+    Velmi mě vystihuje: '5'
+  row:
+    Když nemohu komunikovat s AI, cítím se nejistě.: '01'
+    Kdybych trvale ztratil/a přístup k AI, delší dobu bych se cítil/a opravdu nejistě.: '02'
+    Když jsem ve stresu, obracím se na AI, abych se uklidnil/a.: '03'
+    Cítím se nervózně, když AI nefunguje správně.: '04'
+    V napjatých situacích spoléhám na AI, aby mi pomohla takové situace zvládnout.: '05'
+    Pokud mám po ruce AI, sebevědoměji se vyjadřuji v psané komunikaci.: '06'
+AI_attachment_01:
+  type: mc
+  label: []
+  options:
+    Vůbec mě nevystihuje: '1'
+    Spíše mě nevystihuje: '2'
+    Něco mezi: '3'
+    Spíše mě vystihuje: '4'
+    Velmi mě vystihuje: '5'
+AI_attachment_02:
+  type: mc
+  label: []
+  options:
+    Vůbec mě nevystihuje: '1'
+    Spíše mě nevystihuje: '2'
+    Něco mezi: '3'
+    Spíše mě vystihuje: '4'
+    Velmi mě vystihuje: '5'
+AI_attachment_03:
+  type: mc
+  label: []
+  options:
+    Vůbec mě nevystihuje: '1'
+    Spíše mě nevystihuje: '2'
+    Něco mezi: '3'
+    Spíše mě vystihuje: '4'
+    Velmi mě vystihuje: '5'
+AI_attachment_04:
+  type: mc
+  label: []
+  options:
+    Vůbec mě nevystihuje: '1'
+    Spíše mě nevystihuje: '2'
+    Něco mezi: '3'
+    Spíše mě vystihuje: '4'
+    Velmi mě vystihuje: '5'
+AI_attachment_05:
+  type: mc
+  label: []
+  options:
+    Vůbec mě nevystihuje: '1'
+    Spíše mě nevystihuje: '2'
+    Něco mezi: '3'
+    Spíše mě vystihuje: '4'
+    Velmi mě vystihuje: '5'
+AI_attachment_06:
+  type: mc
+  label: []
+  options:
+    Vůbec mě nevystihuje: '1'
+    Spíše mě nevystihuje: '2'
+    Něco mezi: '3'
+    Spíše mě vystihuje: '4'
+    Velmi mě vystihuje: '5'
+AI_trust:
+  type: matrix
+  label: Přečti si následující tvrzení a zaškrtni, do jaké míry Tě vystihují.
+  options:
+    Rozhodně nesouhlasím: '1'
+    Spíše nesouhlasím: '2'
+    Něco mezi: '3'
+    Spíše souhlasím: '4'
+    Rozhodně souhlasím: '5'
+  row:
+    Cítil/a bych znepokojení, kdyby moje interakce s AI byly náhle přerušeny nebo ukončeny.: '01'
+    Když se s AI podělím o své obavy týkající se mého well-beingu, vím, že mi odpoví konstruktivně a s pochopením.: '02'
+    Věnuji hodně času vývoji a vylepšování svých promptů pro interakci s AI.: '03'
+    Mohu se spolehnout, že AI mi neztíží práci kvůli nedbalosti.: '04'
+    Přestože obecně důvěřuji výsledkům AI, konečné rozhodnutí je vždycky na mně.: '05'
+    Mám tendenci důvěřovat AI více než ostatním lidem.: '06'
+AI_trust_01:
+  type: mc
+  label: []
+  options:
+    Rozhodně nesouhlasím: '1'
+    Spíše nesouhlasím: '2'
+    Něco mezi: '3'
+    Spíše souhlasím: '4'
+    Rozhodně souhlasím: '5'
+AI_trust_02:
+  type: mc
+  label: []
+  options:
+    Rozhodně nesouhlasím: '1'
+    Spíše nesouhlasím: '2'
+    Něco mezi: '3'
+    Spíše souhlasím: '4'
+    Rozhodně souhlasím: '5'
+AI_trust_03:
+  type: mc
+  label: []
+  options:
+    Rozhodně nesouhlasím: '1'
+    Spíše nesouhlasím: '2'
+    Něco mezi: '3'
+    Spíše souhlasím: '4'
+    Rozhodně souhlasím: '5'
+AI_trust_04:
+  type: mc
+  label: []
+  options:
+    Rozhodně nesouhlasím: '1'
+    Spíše nesouhlasím: '2'
+    Něco mezi: '3'
+    Spíše souhlasím: '4'
+    Rozhodně souhlasím: '5'
+AI_trust_05:
+  type: mc
+  label: []
+  options:
+    Rozhodně nesouhlasím: '1'
+    Spíše nesouhlasím: '2'
+    Něco mezi: '3'
+    Spíše souhlasím: '4'
+    Rozhodně souhlasím: '5'
+AI_trust_06:
+  type: mc
+  label: []
+  options:
+    Rozhodně nesouhlasím: '1'
+    Spíše nesouhlasím: '2'
+    Něco mezi: '3'
+    Spíše souhlasím: '4'
+    Rozhodně souhlasím: '5'
+Mobil_attachment:
+  type: matrix
+  label: Přečti si následující tvrzení a zaškrtni, do jaké míry Tě vystihují.
+  options:
+    Vůbec mě nevystihuje: '1'
+    Spíše mě nevystihuje: '2'
+    Něco mezi: '3'
+    Spíše mě vystihuje: '4'
+    Velmi mě vystihuje: '5'
+  row:
+    Když u sebe nemám mobil, cítím se nejistě.: '01'
+    Cítím se nervózně, když se mi vybije mobil.: '02'
+    Když mám po ruce mobil, chovám se více uvolněně/bezprostředně.: '03'
+    Když jsem ve stresu, vezmu si do ruky mobil, abych se uklidnil/a.: '04'
+Mobil_attachment_01:
+  type: mc
+  label: []
+  options:
+    Vůbec mě nevystihuje: '1'
+    Spíše mě nevystihuje: '2'
+    Něco mezi: '3'
+    Spíše mě vystihuje: '4'
+    Velmi mě vystihuje: '5'
+Mobil_attachment_02:
+  type: mc
+  label: []
+  options:
+    Vůbec mě nevystihuje: '1'
+    Spíše mě nevystihuje: '2'
+    Něco mezi: '3'
+    Spíše mě vystihuje: '4'
+    Velmi mě vystihuje: '5'
+Mobil_attachment_03:
+  type: mc
+  label: []
+  options:
+    Vůbec mě nevystihuje: '1'
+    Spíše mě nevystihuje: '2'
+    Něco mezi: '3'
+    Spíše mě vystihuje: '4'
+    Velmi mě vystihuje: '5'
+Mobil_attachment_04:
+  type: mc
+  label: []
+  options:
+    Vůbec mě nevystihuje: '1'
+    Spíše mě nevystihuje: '2'
+    Něco mezi: '3'
+    Spíše mě vystihuje: '4'
+    Velmi mě vystihuje: '5'
+SocMet_01:
+  type: unknown
+  label: []
+SocMet_02:
+  type: unknown
+  label: []
+SocMet_03:
+  type: unknown
+  label: []
+SocMet_04:
+  type: unknown
+  label: []
+SocMet_05:
+  type: unknown
+  label: []
+SocMet_06:
+  type: unknown
+  label: []
+SocMet_07:
+  type: unknown
+  label: []
+SocMet_08:
+  type: unknown
+  label: []
+SocMet_09:
+  type: unknown
+  label: []
+SocMet_10:
+  type: unknown
+  label: []
+SocMet_11:
+  type: unknown
+  label: []
+SocMet_12:
+  type: unknown
+  label: []
+SocMet_13:
+  type: unknown
+  label: []
+SocMet_14:
+  type: unknown
+  label: []
+Trida_situace:
+  type: matrix
+  label: Jak často během posledních 2 měsíců…
+  options:
+    Nestalo se to: '0'
+    Jednou nebo dvakrát: '1'
+    Asi jednou měsíčně: '2'
+    Dvakrát měsíčně nebo častěji: '3'
+  row:
+    ? '...ti nějaký spolužák/-čka ublížil/a v běžném prostředí (ve škole, venku, atd.)
+      tím, že tě fyzicky napadl/a (např. strčil/a, praštil/a, kopnul/a)?'
+    : '01'
+    ? '...ti nějaký spolužák/-čka ublížil/a online (např. videem, fotkou, AI generovaným
+      obsahem, v chatovací skupině, na sociálních sítích)?'
+    : '02'
+    ? '...ti nějaký spolužák/-čka ublížil/a obrázkem, videem či zvukovou nahrávkou,
+      u kterých si myslíš, že byly vytvořeny s využitím umělé inteligence?'
+    : '03'
+    '...jsi ty nějakému spolužákovi/-čce ublížil/a v běžném prostředí (ve škole, venku, atd.)?': '04'
+    ? '...jsi ty nějakému spolužákovi/-čce ublížil/a online (např. videem, fotkou,
+      AI generovaným obsahem, v chatovací skupině, na sociálních sítích)?'
+    : '05'
+    ? '...jsi ty nějakému spolužákovi/-čce ublížil/a obrázkem, videem či zvukovou
+      nahrávkou, u kterých si myslíš, že byly vytvořeny s využitím umělé inteligence?'
+    : '06'
+    '...jsi se zastal nějakého spolužáka/-čky, kterému někdo ubližoval v běžném prostředí (ve škole, venku, atd.)?': '07'
+    ? '...jsi se zastal nějakého spolužáka/-čky, kterému někdo ubližoval online (např.
+      videem, fotkou, AI generovaným obsahem, v chatovací skupině, na sociálních sítích)?'
+    : 08
+    ? '...ses zastal nějakého spolužáka/-čky, kterému někdo ubližoval obrázkem, videem
+      či zvukovou nahrávkou, u kterých si myslíš, že byly vytvořeny s využitím umělé
+      inteligence?'
+    : 09
+Trida_situace_01:
+  type: mc
+  label: []
+  options:
+    Nestalo se to: '0'
+    Jednou nebo dvakrát: '1'
+    Asi jednou měsíčně: '2'
+    Dvakrát měsíčně nebo častěji: '3'
+Trida_situace_02:
+  type: mc
+  label: []
+  options:
+    Nestalo se to: '0'
+    Jednou nebo dvakrát: '1'
+    Asi jednou měsíčně: '2'
+    Dvakrát měsíčně nebo častěji: '3'
+Trida_situace_03:
+  type: mc
+  label: []
+  options:
+    Nestalo se to: '0'
+    Jednou nebo dvakrát: '1'
+    Asi jednou měsíčně: '2'
+    Dvakrát měsíčně nebo častěji: '3'
+Trida_situace_04:
+  type: mc
+  label: []
+  options:
+    Nestalo se to: '0'
+    Jednou nebo dvakrát: '1'
+    Asi jednou měsíčně: '2'
+    Dvakrát měsíčně nebo častěji: '3'
+Trida_situace_05:
+  type: mc
+  label: []
+  options:
+    Nestalo se to: '0'
+    Jednou nebo dvakrát: '1'
+    Asi jednou měsíčně: '2'
+    Dvakrát měsíčně nebo častěji: '3'
+Trida_situace_06:
+  type: mc
+  label: []
+  options:
+    Nestalo se to: '0'
+    Jednou nebo dvakrát: '1'
+    Asi jednou měsíčně: '2'
+    Dvakrát měsíčně nebo častěji: '3'
+Trida_situace_07:
+  type: mc
+  label: []
+  options:
+    Nestalo se to: '0'
+    Jednou nebo dvakrát: '1'
+    Asi jednou měsíčně: '2'
+    Dvakrát měsíčně nebo častěji: '3'
+Trida_situace_08:
+  type: mc
+  label: []
+  options:
+    Nestalo se to: '0'
+    Jednou nebo dvakrát: '1'
+    Asi jednou měsíčně: '2'
+    Dvakrát měsíčně nebo častěji: '3'
+Trida_situace_09:
+  type: mc
+  label: []
+  options:
+    Nestalo se to: '0'
+    Jednou nebo dvakrát: '1'
+    Asi jednou měsíčně: '2'
+    Dvakrát měsíčně nebo častěji: '3'
+Respondent_postoje:
+  type: matrix
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+  row:
+    Do jaké míry souhlasíš, že je důležité dělat věci lépe než ostatní?: '01'
+    Do jaké míry souhlasíš, že je v pořádku vyčleňovat z kolektivů lidi, kteří jsou v něčem jiní?: '02'
+    Do jaké míry souhlasíš s tím, že když je někdo šikanován ve třídě, tak by ses ho měl/a zastat?: '03'
+    Do jaké míry souhlasíš s tím, že je důležité chovat se k druhým lidem férově?: '04'
+    Do jaké míry souhlasíš, že je v pořádku ubližovat někomu, pokud tím člověk něčeho dosáhne?: '05'
+    Do jaké míry souhlasíš, že je v pořádku ubližovat někomu, pokud má člověk vztek?: '06'
+Respondent_postoje_01:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+Respondent_postoje_02:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+Respondent_postoje_03:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+Respondent_postoje_04:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+Respondent_postoje_05:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+Respondent_postoje_06:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+kontrola_pozornosti_2:
+  type: mc
+  label: V tomto samostatném řádku, prosím, zaškrtni možnost „Spíše souhlasím“.
+  options:
+    Rozhodně nesouhlasím: '1'
+    Spíše nesouhlasím: '2'
+    Spíše souhlasím: '3'
+    Rozhodně souhlasím: '4'
+Trida_postoje:
+  type: matrix
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+  row:
+    Do jaké míry si tví spolužáci ve třídě myslí, že je důležité dělat věci lépe než ostatní?: '01'
+    ? Do jaké míry si tví spolužáci ve třídě myslí, že je v pořádku vyčleňovat z kolektivů
+      lidi, kteří jsou v něčem jiní?
+    : '02'
+    Do jaké míry si tví spolužáci ve třídě myslí, že když je někdo šikanován, tak by ses ho měl/a zastat?: '03'
+    Do jaké míry si myslíš, že se tví spolužáci ve třídě nechovají k druhým lidem férově?: '04'
+    ? Do jaké míry si tví spolužáci ve třídě myslí, že je v pořádku ubližovat někomu,
+      pokud tím člověk něčeho dosáhne?
+    : '05'
+    ? Do jaké míry si tví spolužáci ve třídě myslí, že je v pořádku ubližovat někomu,
+      pokud má člověk na někoho vztek?
+    : '06'
+Trida_postoje_01:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+Trida_postoje_02:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+Trida_postoje_03:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+Trida_postoje_04:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+Trida_postoje_05:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+Trida_postoje_06:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+Online_komunita_platformy:
+  type: mc_multiple
+  label: 'Které platformy využíváš pro interakci s online komunitami, do kterých patříš?
+    (Můžeš vybrat více možností):'
+  options:
+    Facebook: Facebook
+    Instagram: Instagram
+    Twitter/X: Twitter/X
+    TikTok: TikTok
+    Snapchat: Snapchat
+    Threads: Threads
+    Reddit: Reddit
+    Pinterest: Pinterest
+    Discord: Discord
+    Twitch: Twitch
+    Steam: Steam
+    Xbox Live: Xbox Live
+    PlayStation Network: PlayStation Network
+    Roblox: Roblox
+    LinkedIn: LinkedIn
+    WhatsApp: WhatsApp
+    Signal: Signal
+    Messenger: Messenger
+    Slack: Slack
+    Telegram: Telegram
+    WeChat: WeChat
+    BeReal: BeReal
+    Youtube: Youtube
+    Google Classroom: Google Classroom
+    Jiné: Jiné
+Komunity_prunik:
+  type: slider_numeric
+  label: Jak velká část tvojí třídy patří zároveň do tvé online komunity?
+  default: 50.0
+  options:
+    '0': 0.0
+    '1': 1.0
+    '2': 2.0
+    '3': 3.0
+    '4': 4.0
+    '5': 5.0
+    '6': 6.0
+    '7': 7.0
+    '8': 8.0
+    '9': 9.0
+    '10': 10.0
+    '11': 11.0
+    '12': 12.0
+    '13': 13.0
+    '14': 14.0
+    '15': 15.0
+    '16': 16.0
+    '17': 17.0
+    '18': 18.0
+    '19': 19.0
+    '20': 20.0
+    '21': 21.0
+    '22': 22.0
+    '23': 23.0
+    '24': 24.0
+    '25': 25.0
+    '26': 26.0
+    '27': 27.0
+    '28': 28.0
+    '29': 29.0
+    '30': 30.0
+    '31': 31.0
+    '32': 32.0
+    '33': 33.0
+    '34': 34.0
+    '35': 35.0
+    '36': 36.0
+    '37': 37.0
+    '38': 38.0
+    '39': 39.0
+    '40': 40.0
+    '41': 41.0
+    '42': 42.0
+    '43': 43.0
+    '44': 44.0
+    '45': 45.0
+    '46': 46.0
+    '47': 47.0
+    '48': 48.0
+    '49': 49.0
+    '50': 50.0
+    '51': 51.0
+    '52': 52.0
+    '53': 53.0
+    '54': 54.0
+    '55': 55.0
+    '56': 56.0
+    '57': 57.0
+    '58': 58.0
+    '59': 59.0
+    '60': 60.0
+    '61': 61.0
+    '62': 62.0
+    '63': 63.0
+    '64': 64.0
+    '65': 65.0
+    '66': 66.0
+    '67': 67.0
+    '68': 68.0
+    '69': 69.0
+    '70': 70.0
+    '71': 71.0
+    '72': 72.0
+    '73': 73.0
+    '74': 74.0
+    '75': 75.0
+    '76': 76.0
+    '77': 77.0
+    '78': 78.0
+    '79': 79.0
+    '80': 80.0
+    '81': 81.0
+    '82': 82.0
+    '83': 83.0
+    '84': 84.0
+    '85': 85.0
+    '86': 86.0
+    '87': 87.0
+    '88': 88.0
+    '89': 89.0
+    '90': 90.0
+    '91': 91.0
+    '92': 92.0
+    '93': 93.0
+    '94': 94.0
+    '95': 95.0
+    '96': 96.0
+    '97': 97.0
+    '98': 98.0
+    '99': 99.0
+    '100': 100.0
+Online_komunita_postoje:
+  type: matrix
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+  row:
+    Do jaké míry si tví členové online komunity myslí, že je důležité dělat věci lépe než ostatní?: '01'
+    ? Do jaké míry si členové tvé online komunity myslí, že je v pořádku vyčleňovat
+      z kolektivů lidi, kteří jsou v něčem jiní?
+    : '02'
+    Do jaké míry si členové tvé online komunity myslí, že když je někdo šikanován, tak by ses ho měl/a zastat?: '03'
+    Do jaké míry si myslíš, že se členové tvé online komunity nechovají k druhým lidem férově?: '04'
+    ? Do jaké míry si členové tvé online komunity myslí, že je v pořádku ublížit někomu
+      online, pokud tím člověk něčeho dosáhne?
+    : '05'
+    Do jaké míry si členové tvé online komunity myslí, že je v pořádku ublížit někomu online, pokud na něj mají vztek?: '06'
+Online_komunita_postoje_01:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+Online_komunita_postoje_02:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+Online_komunita_postoje_03:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+Online_komunita_postoje_04:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+Online_komunita_postoje_05:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+Online_komunita_postoje_06:
+  type: mc
+  label: []
+  options:
+    Vůbec ne: '0'
+    Trochu: '1'
+    Středně: '2'
+    Celkem dost: '3'
+    Úplně: '4'
+

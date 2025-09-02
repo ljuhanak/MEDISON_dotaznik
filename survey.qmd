@@ -1,0 +1,1521 @@
+---
+# General Settings
+format: html
+echo: false
+warning: false
+
+# Theme Settings
+theme: sandstone
+barposition: top
+
+# Survey Settings
+
+auto-scroll: true
+highlight-unanswered: true
+highlight-color: blue
+capture-metadata: true
+---
+
+```{r}
+library(surveydown)
+
+```
+
+
+::: {.sd_page id=uvod}
+
+**Milá studentko / milý studente,**
+
+škola, kterou navštěvuješ se účastní veřejně prospěšného výzkumu o umělé inteligenci (AI). Tohoto výzkumu se bude účastnit více než 5000 studentů z 50 středních škol.
+
+**Přínosy a rizika vyplývající z účasti na výzkumu**
+
+Výzkum ai-dolescence reaguje na vývoj technologií AI, které se staly součástí každodenního života moderní společnosti. Cílem výzkumu je zjistit, jak žáci tuto novou technologii vnímají a používají. Mimo to se však výzkum soustředí také na problematiku sociálních vztahů, včetně šikany, které s vývojem technologií mohou souviset. Výsledky výzkumu rozšíří poznatky o dopadech moderních technologií na vzdělávání v českých školách.
+
+**Účast v tomto výzkumu je dobrovolná a můžeš kdykoliv přestat.** Zajímá nás Tvůj názor a zkušenost. Odpovědi studentů získáváme pomocí dotazníku a zpracováváme anonymně. Pro zahájení dotazníku klikni na tlačítko níže.
+
+
+```{r}
+sd_next(next_page = 'info_souhlas')
+```
+
+:::
+
+
+::: {.sd_page id=info_souhlas}
+
+## Informovaný souhlas
+
+Zde si Tě dovolujeme požádat o souhlas s tím, abys se zúčastnil/a pilotního šetření, jehož cílem je ověřit srozumitelnost a celkovou funkčnost dotazníku pro plánovaný výzkum na velkém vzorku škol. Text níže uvádí základní informace o tom, čemu se výzkum bude věnovat a jak bude probíhat.
+
+Uvedením svého jména a zvolením možnosti „Souhlasím“ na konci této stránky můžeš vyjádřit souhlas s účastí na tomto pilotním šetření a pokračovat k samotnému dotazníku. Zvolením možnosti „Nesouhlasím“ bude vyplňování dotazníku ukončeno.
+
+**Přínosy a rizika vyplývající z účasti na výzkumu**
+
+Výzkum ai-dolescence reaguje na dramatický vývoj technologií, které se staly součástí každodenního života moderní společnosti. Rozvoj technologií založených na umělé inteligenci (AI) v posledních letech výrazně hýbe školstvím as velkou pravděpodobností bude formovat budoucnost vzdělávání. Cílem výzkumu je tedy zjistit, jak žáci tuto novou technologii vnímají, jak ji používají, a jaké mají v oblasti umělé inteligence znalosti a dovednosti. Mimo to se však výzkum soustředí také na problematiku šikany, která s nárůstem online komunikace a využívání digitálních nástrojů nabývá nových podob a souvislostí. Výsledky výzkumu rozšíří poznatky o dopadech technologií na vzdělávání a sociální klima ve školách.
+
+Účast ve výzkumu je dobrovolná, anonymizovaná a nepřináší žádná rizika, která by přesahovala rámec běžné školní výuky.
+
+**Správa dat**
+
+Data od účastníků výzkumu budou sbírána v tzv. pseudonymizované podobě. To znamená, že všechny identifikační údaje (např. jméno), které budou od účastníků výzkumu získány a které by mohly umožňovat identifikaci účastníka výzkumu, budou anonymizovány pomocí převedení na speciální alfanumerický kód tak, aby v průběhu projektu mohli výzkumníci propojit dotazníky od konkrétního účastníka napříč dvěma dotazováními bez potřeby znát jeho identitu či identitu třídy či školy, kterou navštěvuje. V jakékoli další práci s daty tak již nebudou k dispozici žádné identifikační údaje, nýbrž pouze uvedený alfanumerický kód.
+
+Soubor obsahující převod identifikačních údajů na číselný kód (tzv. kódovací klíč) bude mít k dispozici pouze jeden z členů výzkumného týmu. Po ukončení sběru dat od všech účastníků bude kódovací klíč nenávratně smazán. Výsledná plně anonymizovaná data mohou být následně sdílena ve vědecké komunitě, výhradně za účelem vědeckého výzkumu.
+
+Pokud souhlasíš se svou účastí v našem výzkumu, vyplň prosím níže uvedené údaje. Pokud Ti ještě nebylo 18 let, požádali jsme o souhlas s účastí ve výzkumu i Tvé rodiče.
+
+S případnými dotazy se neváhej obrátit na vedoucího projektu na emailové adrese tomas.lintner@mail.muni.cz.
+
+Děkujeme!
+Tomáš Lintner, Ph.D., vedoucí projektu
+
+
+```{r}
+sd_question(
+  id    = "jmeno",
+  type  = "text",
+  label = "Jméno a příjmení"
+)
+```
+
+
+**Vyjádření informovaného souhlasu s Vaší účastí ve výzkumu.**
+
+```{r}
+sd_question(
+  type  = 'select',
+  id    = 'info_souhlas_1',
+  label = "*Souhlasím / Nesouhlasím* se svou účastí v uvedeném výzkumném projektu a rozumím tomu, že účast je dobrovolná a že mohu souhlas odmítnout či odvolat.",
+  option = c(
+    "Souhlasím" = "souhlasim",
+    "Nesouhlasím" = "nesouhlasim"
+  )
+)
+```
+
+
+**Osobní údaje, jako je věk, jméno či příjmení, které se budou v rámci dotazníku sbírat, budou v datech anonymizovány.**
+
+```{r}
+sd_question(
+  type  = 'select',
+  id    = 'info_souhlas_2',
+  label = "*Souhlasím / Nesouhlasím* s poskytnutím svých osobních údajů ve výše uvedeném rozsahu.",
+  option = c(
+    "Souhlasím" = "souhlasim",
+    "Nesouhlasím" = "nesouhlasim"
+  )
+)
+```
+
+
+```{r}
+sd_next(next_page = 'demografie')
+```
+
+:::
+
+
+::: {.sd_page id=demografie}
+
+## V této části nám, prosím, poskytni základní informace o sobě.
+
+```{r}
+sd_question(
+  type   = 'mc',
+  id     = 'gender',
+  label  = "Jaké je Tvoje pohlaví?",
+  option = c(
+    "Žena"       = "zena",
+    "Muž"        = "muz",
+    "Nebinární"  = "nebinarni",
+    "Jiné"       = "jine"
+  )
+)
+```
+
+
+```{r}
+sd_question(
+  type  = "numeric",
+  id    = "vek",
+  label = "Kolik Ti je let? (uveď pouze celé číslo v letech, např. 16)"
+)
+```
+
+
+```{r}
+sd_question(
+  type  = 'mc_multiple',
+  id    = 'jazyk_matka',
+  label = "Jakým jazykem doma mluvíš se svou matkou?",
+  option = c(
+    "česky"      = "cestina",
+    "slovensky"  = "slovenstina",
+    "vietnamsky" = "vietnamstina",
+    "ukrajinsky" = "ukrajinstina",
+    "rusky"      = "rustina",
+    "romsky"     = "romstina",
+    "jine"       = "jine"
+  )
+)
+```
+
+
+```{r}
+sd_question(
+  type  = 'mc_multiple',
+  id    = 'jazyk_otec',
+  label = "Jakým jazykem doma mluvíš se svým otcem?",
+  option = c(
+    "česky"      = "cestina",
+    "slovensky"  = "slovenstina",
+    "vietnamsky" = "vietnamstina",
+    "ukrajinsky" = "ukrajinstina",
+    "rusky"      = "rustina",
+    "romsky"     = "romstina",
+    "jine"       = "jine"
+  )
+)
+```
+
+
+```{r}
+sd_question(
+  type   = 'mc',
+  id     = 'matka_vzdelani',
+  label  = "Dosáhla Tvá matka vysokoškolského vzdělání?",
+  option = c(
+    "Ano"       = "ano",
+    "Ne"        = "ne"
+  )
+)
+```
+
+
+```{r}
+sd_question(
+  type   = 'mc',
+  id     = 'otec_vzdelani',
+  label  = "Dosáhl Tvůj otec vysokoškolského vzdělání?",
+  option = c(
+    "Ano"       = "ano",
+    "Ne"        = "ne"
+  )
+)
+```
+
+
+```{r}
+sd_question(
+  type  = "numeric",
+  id    = "pocet_pocitacu",
+  label = "Kolik máte doma počítačů? (počítají se stolní počítače a notebooky, které aktivně používáte) V případě, že žiješ ve více domácnostech, vyber tu, ve které trávíš více času."
+)
+```
+
+
+```{r}
+sd_next(next_page = 'AItest_pokyny')
+```
+
+:::
+
+
+::: {.sd_page id=AItest_pokyny}
+
+**Nyní Tě bude čekat test AI gramotnosti.**
+
+V této části nejde o Tvoje názory či postoje, na každou otázku existuje pouze jedna správná odpověď. Sesbíraná data budou anonymizována.
+
+Během vyplňování měj zavřená všechna ostatní okna a karty v prohlížeči. Odpovídej samostatně a bez pomoci internetu.
+
+
+```{r}
+sd_next(next_page = 'AItest1')
+```
+
+:::
+
+::: {.sd_page id=AItest1}
+
+```{r}
+sd_output(id = "AIq1", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest2')
+```
+
+:::
+
+::: {.sd_page id=AItest2}
+
+```{r}
+sd_output(id = "AIq2", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest3')
+```
+
+:::
+
+::: {.sd_page id=AItest3}
+
+```{r}
+sd_output(id = "AIq3", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest4')
+```
+
+:::
+
+::: {.sd_page id=AItest4}
+
+```{r}
+sd_output(id = "AIq4", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest5')
+```
+
+:::
+
+::: {.sd_page id=AItest5}
+
+```{r}
+sd_output(id = "AIq5", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest6')
+```
+
+:::
+
+::: {.sd_page id=AItest6}
+
+```{r}
+sd_output(id = "AIq6", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest7')
+```
+
+:::
+
+::: {.sd_page id=AItest7}
+
+```{r}
+sd_output(id = "AIq7", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest8')
+```
+
+:::
+
+::: {.sd_page id=AItest8}
+
+```{r}
+sd_output(id = "AIq8", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest9')
+```
+
+:::
+
+::: {.sd_page id=AItest9}
+
+```{r}
+sd_output(id = "AIq9", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest10')
+```
+
+:::
+
+::: {.sd_page id=AItest10}
+
+```{r}
+sd_output(id = "AIq10", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest11')
+```
+
+:::
+
+::: {.sd_page id=AItest11}
+
+```{r}
+sd_output(id = "AIq11", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest12')
+```
+
+:::
+
+::: {.sd_page id=AItest12}
+
+```{r}
+sd_output(id = "AIq12", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest13')
+```
+
+:::
+
+::: {.sd_page id=AItest13}
+
+```{r}
+sd_output(id = "AIq13", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest14')
+```
+
+:::
+
+::: {.sd_page id=AItest14}
+
+```{r}
+sd_output(id = "AIq14", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest15')
+```
+
+:::
+
+::: {.sd_page id=AItest15}
+
+```{r}
+sd_output(id = "AIq15", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest16')
+```
+
+:::
+
+::: {.sd_page id=AItest16}
+
+```{r}
+sd_output(id = "AIq16", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest17')
+```
+
+:::
+
+::: {.sd_page id=AItest17}
+
+```{r}
+sd_output(id = "AIq17", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest18')
+```
+
+:::
+
+::: {.sd_page id=AItest18}
+
+```{r}
+sd_output(id = "AIq18", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest19')
+```
+
+:::
+
+::: {.sd_page id=AItest19}
+
+```{r}
+sd_output(id = "AIq19", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest20')
+```
+
+:::
+
+::: {.sd_page id=AItest20}
+
+```{r}
+sd_output(id = "AIq20", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest21')
+```
+
+:::
+
+::: {.sd_page id=AItest21}
+
+```{r}
+sd_output(id = "AIq21", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest22')
+```
+
+:::
+
+::: {.sd_page id=AItest22}
+
+```{r}
+sd_output(id = "AIq22", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest23')
+```
+
+:::
+
+::: {.sd_page id=AItest23}
+
+```{r}
+sd_output(id = "AIq23", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest24')
+```
+
+:::
+
+::: {.sd_page id=AItest24}
+
+```{r}
+sd_output(id = "AIq24", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest25')
+```
+
+:::
+
+::: {.sd_page id=AItest25}
+
+```{r}
+sd_output(id = "AIq25", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest26')
+```
+
+:::
+
+::: {.sd_page id=AItest26}
+
+```{r}
+sd_output(id = "AIq26", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest27')
+```
+
+:::
+
+::: {.sd_page id=AItest27}
+
+```{r}
+sd_output(id = "AIq27", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest28')
+```
+
+:::
+
+::: {.sd_page id=AItest28}
+
+```{r}
+sd_output(id = "AIq28", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest29')
+```
+
+:::
+
+::: {.sd_page id=AItest29}
+
+```{r}
+sd_output(id = "AIq29", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest30')
+```
+
+:::
+
+::: {.sd_page id=AItest30}
+
+```{r}
+sd_output(id = "AIq30", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest31')
+```
+
+:::
+
+::: {.sd_page id=AItest31}
+
+```{r}
+sd_output(id = "AIq31", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest32')
+```
+
+:::
+
+::: {.sd_page id=AItest32}
+
+```{r}
+sd_output(id = "AIq32", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest33')
+```
+
+:::
+
+::: {.sd_page id=AItest33}
+
+```{r}
+sd_output(id = "AIq33", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest34')
+```
+
+:::
+
+::: {.sd_page id=AItest34}
+
+```{r}
+sd_output(id = "AIq34", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest35')
+```
+
+:::
+
+::: {.sd_page id=AItest35}
+
+```{r}
+sd_output(id = "AIq35", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest36')
+```
+
+:::
+
+::: {.sd_page id=AItest36}
+
+```{r}
+sd_output(id = "AIq36", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest37')
+```
+
+:::
+
+::: {.sd_page id=AItest37}
+
+```{r}
+sd_output(id = "AIq37", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest38')
+```
+
+:::
+
+::: {.sd_page id=AItest38}
+
+```{r}
+sd_output(id = "AIq38", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest39')
+```
+
+:::
+
+::: {.sd_page id=AItest39}
+
+```{r}
+sd_output(id = "AIq39", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest40')
+```
+
+:::
+
+::: {.sd_page id=AItest40}
+
+```{r}
+sd_output(id = "AIq40", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest41')
+```
+
+:::
+
+::: {.sd_page id=AItest41}
+
+```{r}
+sd_output(id = "AIq41", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest42')
+```
+
+:::
+
+::: {.sd_page id=AItest42}
+
+```{r}
+sd_output(id = "AIq42", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest43')
+```
+
+:::
+
+::: {.sd_page id=AItest43}
+
+```{r}
+sd_output(id = "AIq43", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AItest44')
+```
+
+:::
+
+::: {.sd_page id=AItest44}
+
+```{r}
+sd_output(id = "AIq44", type = "question")
+```
+
+```{r}
+sd_next(next_page = 'AIdalsi_pokyny')
+```
+
+:::
+
+
+
+::: {.sd_page id=AIdalsi_pokyny}
+
+
+**Ve zbývající části dotazníku již nejsou správné nebo špatné odpovědi – zajímá nás pouze Tvůj osobní názor.**
+
+
+```{r}
+sd_next(next_page = 'AIdalsi_1')
+```
+
+:::
+
+
+::: {.sd_page id=AIdalsi_1}
+
+```{r}
+sd_question(
+  type   = "matrix",
+  id     = "AI_porozumeni",
+  label  = "Přečti si následující tvrzení a zaškrtni, do jaké míry s ním souhlasíš.",
+  row    = c(
+    "Je důležitější umět se dobře zeptat umělé inteligence (AI) než věcem sám/a rozumět." = "01"
+  ),
+  option = c(
+    "Naprosto nesouhlasím" = "1",
+    "Spíše nesouhlasím" = "2",
+    "Neutrální" = "3",
+    "Spíše souhlasím" = "4",
+    "Naprosto souhlasím" = "5"
+  )
+)
+```
+
+
+```{r}
+sd_question(
+  type   = "matrix",
+  id     = "AI_cetnost_vyuzivani",
+  label  = "Následující dvě otázky se týkají toho, jak často využíváš umělou inteligenci. U každé otázky prosím označ, jak často AI používáš.",
+  row    = c(
+    "Jak často používáš AI při přípravě do školy?" = "skola",
+    "Jak často používáš AI ve svém volném čase? "  = "volny_cas"
+  ),
+  option = c(
+    "Nikdy nebo skoro nikdy" = "1",
+    "Méně než jednou týdně"  = "2",
+    "Jednou týdně"  = "3",
+    "Jednou denně"  = "4",
+    "Několikrát denně" = "5"
+  )
+)
+```
+
+
+```{r}
+sd_question(
+  type   = 'mc',
+  id     = 'kontrola_pozornosti_1',
+  label  = "V tomto samostatném řádku, prosím, zaškrtni možnost „Spíše nesouhlasím“.",
+  option = c(
+    "Rozhodně nesouhlasím " = "1",
+    "Spíše nesouhlasím" = "2",
+    "Spíše souhlasím" = "3",
+    "Rozhodně souhlasím" = "4"
+  )
+)
+```
+
+
+```{r}
+sd_next(next_page = 'AIdalsi_2')
+```
+
+:::
+
+
+::: {.sd_page id=AIdalsi_2}
+
+
+```{r}
+sd_question(
+  type  = 'mc_multiple_buttons',
+  id    = 'AI_vyuziti_ke_skole',
+  direction = "vertical",
+  label = "**Následující položky popisují způsoby využití umělé inteligence (AI) pro školní záležitosti (např. vypracování domácích úkolů, projektů). Označ ty z nich, u kterých jsi v posledním 1 měsíci využil/a libovolný nástroj využívající umělou inteligenci (např. ChatGPT).**",
+  option = c(
+    "Využití AI pro brainstorming nebo inspiraci pro nápady na domácí úkol, slohovou práci, projekt či jiný úkol do školy" = "A",
+"Využití AI k vysvětlení nového pojmu nebo učební látky" = "B",
+"Využití AI k vytvoření fotek nebo obrázků pro školní účely (např. do prezentace či projektu) **s uvedením AI nástroje jako zdroje**" = "C",
+"Využití AI k vyhledání zdrojů, ze kterých lze čerpat při vypracování domácích úkolů, projektů či jiných školních úkolů" = "D",
+"Využití AI k získání zpětné vazby a návrhů na zlepšení tebou vypracovaných domácích úkolů, slohových prací, projektů či jiných školních úkolů" = "E",
+"Využití AI k vytváření studijních materiálů jako jsou např. sebetestovací kartičky (flashcards)" = "F",
+"Využití AI k tvorbě či úpravě programovacího kódu" = "G",
+"Využití AI k učení se cizího jazyka (např. k vysvětlení gramatiky, k vysvětlení pojmů)" = "H",
+"Využití AI k vytvoření několika vět a jejich doslovné zkopírování do domácího úkolu, slohové práce, projektu nebo jiného úkolu do školy **bez uvedení AI nástroje jako zdroje**" = "I",
+"Využití AI k vytvoření delšího textu a jeho doslovné zkopírování do domácího úkolu, slohové práce, projektu nebo jiného školního úkolu **bez uvedení AI nástroje jako zdroje**" = "J",
+"Využití AI přímo při psaní testu nebo písemné práce" = "K",
+"Využití AI k přeformulování textu jiného autora (např. spolužáka) tak, aby vypadal jako vlastní práce" = "L",
+"Využití AI k vytvoření delšího textu, který jsi mírně upravil/a tak, aby vypadal jako vlastní práce, **bez uvedení AI nástroje jako zdroje**" = "M",
+"Využití AI k vytvoření shrnutí nebo k zodpovězení otázek týkajících se materiálu (např. knihy), který jsi měl/a dle zadání přečíst sám/sama" = "N",
+"Využití AI k úpravě svého domácího úkolu, slohové práce, projektu nebo jiného školního úkolu **bez uvedení AI nástroje jako zdroje**" = "O",
+"Využití AI k vytvoření fotek nebo obrázků pro školní účely (např. do prezentace či projektu) **bez uvedení AI nástroje jako zdroje**" = "P"
+  )
+)
+```
+
+
+```{r}
+sd_next(next_page = 'AIdalsi_3')
+```
+
+:::
+
+
+::: {.sd_page id=AIdalsi_3}
+
+**Prosím, vyber obrázek, který nejlépe popisuje Tvůj vztah s umělou inteligencí (AI). Na obrázku uvidíš dva kruhy – jeden reprezentuje „já” a druhý „AI”. Kroužky mohou mít různý stupeň překrytí, přičemž A znamená žádný překryv a G znamená úplný překryv.**
+
+![](pic/AI_kruhy.png)
+
+```{r}
+sd_question(
+  type   = 'mc',
+  id     = 'AI_vztah_kruhy',
+  label  = "Vyber ten obrázek, který nejlépe odpovídá Tvému vztahu s AI.",
+  option = c(
+    "A" = "A",
+    "B" = "B",
+    "C" = "C",
+    "D" = "D",
+    "E" = "E",
+    "F" = "F",
+    "G" = "G"
+  )
+)
+```
+
+
+```{r}
+sd_next(next_page = 'AIdalsi_4')
+```
+
+:::
+
+
+::: {.sd_page id=AIdalsi_4}
+
+```{r}
+sd_question(
+  type   = "matrix",
+  id     = "AI_attachment",
+  label  = "Přečti si následující tvrzení a zaškrtni, do jaké míry Tě vystihují.",
+  row    = c(
+    "Když nemohu komunikovat s AI, cítím se nejistě." = "01",
+    "Kdybych trvale ztratil/a přístup k AI, delší dobu bych se cítil/a opravdu nejistě." = "02",
+    "Když jsem ve stresu, obracím se na AI, abych se uklidnil/a." = "03",
+    "Cítím se nervózně, když AI nefunguje správně." = "04",
+    "V napjatých situacích spoléhám na AI, aby mi pomohla takové situace zvládnout." =     "05",
+    "Pokud mám po ruce AI, sebevědoměji se vyjadřuji v psané komunikaci." = "06"
+
+  ),
+  option = c(
+    "Vůbec mě nevystihuje" = "1",
+    "Spíše mě nevystihuje"  = "2",
+    "Něco mezi"  = "3",
+    "Spíše mě vystihuje"  = "4",
+    "Velmi mě vystihuje" = "5"
+  )
+)
+```
+
+
+```{r}
+sd_next(next_page = 'AIdalsi_5')
+```
+
+:::
+
+
+::: {.sd_page id=AIdalsi_5}
+
+```{r}
+sd_question(
+  type   = "matrix",
+  id     = "AI_trust",
+  label  = "Přečti si následující tvrzení a zaškrtni, do jaké míry Tě vystihují.",
+  row    = c(
+    "Cítil/a bych znepokojení, kdyby moje interakce s AI byly náhle přerušeny nebo ukončeny." = "01",
+    "Když se s AI podělím o své obavy týkající se mého well-beingu, vím, že mi odpoví konstruktivně a s pochopením." = "02",
+    "Věnuji hodně času vývoji a vylepšování svých promptů pro interakci s AI." = "03",
+    "Mohu se spolehnout, že AI mi neztíží práci kvůli nedbalosti." = "04",
+    "Přestože obecně důvěřuji výsledkům AI, konečné rozhodnutí je vždycky na mně." = "05",
+    "Mám tendenci důvěřovat AI více než ostatním lidem." = "06"
+
+  ),
+  option = c(
+    "Rozhodně nesouhlasím" = "1",
+    "Spíše nesouhlasím"  = "2",
+    "Něco mezi"  = "3",
+    "Spíše souhlasím"  = "4",
+    "Rozhodně souhlasím" = "5"
+  )
+)
+```
+
+
+```{r}
+sd_next(next_page = 'AIdalsi_6')
+```
+
+:::
+
+
+::: {.sd_page id=AIdalsi_6}
+
+```{r}
+sd_question(
+  type   = "matrix",
+  id     = "Mobil_attachment",
+  label  = "Přečti si následující tvrzení a zaškrtni, do jaké míry Tě vystihují.",
+  row    = c(
+    "Když u sebe nemám mobil, cítím se nejistě." = "01",
+    "Cítím se nervózně, když se mi vybije mobil." = "02",
+    "Když mám po ruce mobil, chovám se více uvolněně/bezprostředně." = "03",
+    "Když jsem ve stresu, vezmu si do ruky mobil, abych se uklidnil/a." = "04"
+
+  ),
+  option = c(
+    "Vůbec mě nevystihuje" = "1",
+    "Spíše mě nevystihuje"  = "2",
+    "Něco mezi"  = "3",
+    "Spíše mě vystihuje"  = "4",
+    "Velmi mě vystihuje" = "5"
+  )
+)
+```
+
+
+```{r}
+sd_next(next_page = 'AIkonec')
+```
+
+:::
+
+
+::: {.sd_page id=AIkonec}
+
+
+**Děkujeme za zodpovězení otázek týkajících se umělé inteligence (AI). Tato část dotazníku je nyní u konce. Pokračuj prosím na další část, která se zaměřuje na sociální vztahy.**
+
+
+```{r}
+sd_next(next_page = 'Vztahy_1a')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_1a}
+
+**V této části se budeme ptát na Tvoje vztahy se spolužáky a spolužačkami.** Spolužákem či spolužačkou je myšlen člověk z tvé třídy.
+
+**U každého z následujících výroků označ všechny své spolužáky a spolužačky, pro které výrok platí.** U každého výroku můžeš označit více lidí, ale také se může stát, že neoznačíš nikoho.
+
+**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+
+
+```{r}
+sd_output(id = "SocMet_01", type = "question")
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_1b')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_1b}
+
+**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
+
+**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+
+```{r}
+sd_output(id = "SocMet_02", type = "question")
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_1c')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_1c}
+
+**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
+
+**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+
+```{r}
+sd_output(id = "SocMet_03", type = "question")
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_1d')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_1d}
+
+**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
+
+**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+
+```{r}
+sd_output(id = "SocMet_04", type = "question")
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_1e')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_1e}
+
+**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
+
+**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+
+```{r}
+sd_output(id = "SocMet_05", type = "question")
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_1f')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_1f}
+
+**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
+
+**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+
+```{r}
+sd_output(id = "SocMet_06", type = "question")
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_1g')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_1g}
+
+**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
+
+**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+
+```{r}
+sd_output(id = "SocMet_07", type = "question")
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_1h')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_1h}
+
+**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
+
+**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+
+```{r}
+sd_output(id = "SocMet_08", type = "question")
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_1i')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_1i}
+
+**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
+
+**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+
+```{r}
+sd_output(id = "SocMet_09", type = "question")
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_1j')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_1j}
+
+**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
+
+**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+
+```{r}
+sd_output(id = "SocMet_10", type = "question")
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_1k')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_1k}
+
+**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
+
+**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+
+```{r}
+sd_output(id = "SocMet_11", type = "question")
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_1l')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_1l}
+
+**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
+
+**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+
+```{r}
+sd_output(id = "SocMet_12", type = "question")
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_1m')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_1m}
+
+**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
+
+**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+
+```{r}
+sd_output(id = "SocMet_13", type = "question")
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_1n')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_1n}
+
+**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
+
+**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+
+```{r}
+sd_output(id = "SocMet_14", type = "question")
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_2')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_2}
+
+**Tyto otázky se týkají nepříjemných situací s lidmi z Tvé třídy.**
+
+
+```{r}
+sd_question(
+  type   = "matrix",
+  id     = "Trida_situace",
+  label = "Jak často **během posledních 2 měsíců...**",
+  row    = c(
+    "...ti nějaký spolužák/-čka ublížil/a v běžném prostředí (ve škole, venku, atd.) tím, že tě fyzicky napadl/a (např. strčil/a, praštil/a, kopnul/a)?" = "01",
+    "...ti nějaký spolužák/-čka ublížil/a online (např. videem, fotkou, AI generovaným obsahem, v chatovací skupině, na sociálních sítích)?" = "02",
+    "...ti nějaký spolužák/-čka ublížil/a obrázkem, videem či zvukovou nahrávkou, u kterých si myslíš, že byly vytvořeny s využitím umělé inteligence?" = "03",
+    "...jsi ty nějakému spolužákovi/-čce ublížil/a v běžném prostředí (ve škole, venku, atd.)?" = "04",
+    "...jsi ty nějakému spolužákovi/-čce ublížil/a online (např. videem, fotkou, AI generovaným obsahem, v chatovací skupině, na sociálních sítích)?" = "05",
+    "...jsi ty nějakému spolužákovi/-čce ublížil/a obrázkem, videem či zvukovou nahrávkou, u kterých si myslíš, že byly vytvořeny s využitím umělé inteligence?" = "06",
+    "...jsi se zastal nějakého spolužáka/-čky, kterému někdo ubližoval v běžném prostředí (ve škole, venku, atd.)?" = "07",
+    "...jsi se zastal nějakého spolužáka/-čky, kterému někdo ubližoval online (např. videem, fotkou, AI generovaným obsahem, v chatovací skupině, na sociálních sítích)?" = "08",
+    "...ses zastal nějakého spolužáka/-čky, kterému někdo ubližoval obrázkem, videem či zvukovou nahrávkou, u kterých si myslíš, že byly vytvořeny s využitím umělé inteligence?" = "09"
+  ),
+  option = c(
+    "Nestalo se to" = "0",
+    "Jednou nebo dvakrát"  = "1",
+    "Asi jednou měsíčně"  = "2",
+    "Dvakrát měsíčně nebo častěji" = "3"
+  )
+)
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_3')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_3}
+
+**Tyto otázky se týkají Tvých postojů.**
+
+
+```{r}
+sd_question(
+  type   = "matrix",
+  id     = "Respondent_postoje",
+  label  = "",
+  row    = c(
+    "Do jaké míry souhlasíš, že je důležité dělat věci lépe než ostatní?" = "01", 
+    "Do jaké míry souhlasíš, že je v pořádku vyčleňovat z kolektivů lidi, kteří jsou v něčem jiní?" = "02", 
+    "Do jaké míry souhlasíš s tím, že když je někdo šikanován ve třídě, tak by ses ho měl/a zastat?" = "03", 
+    "Do jaké míry souhlasíš s tím, že je důležité chovat se k druhým lidem férově?" = "04", 
+    "Do jaké míry souhlasíš, že je v pořádku ubližovat někomu, pokud tím člověk něčeho dosáhne?" = "05", 
+    "Do jaké míry souhlasíš, že je v pořádku ubližovat někomu, pokud má člověk vztek?" = "06"
+  ),
+  option = c(
+    "Vůbec ne" = "0",
+    "Trochu"  = "1",
+    "Středně"  = "2",
+    "Celkem dost"  = "3",
+    "Úplně" = "4"
+  )
+)
+```
+
+
+```{r}
+sd_question(
+  type   = 'mc',
+  id     = 'kontrola_pozornosti_2',
+  label  = "V tomto samostatném řádku, prosím, zaškrtni možnost „Spíše souhlasím“.",
+  option = c(
+    "Rozhodně nesouhlasím " = "1",
+    "Spíše nesouhlasím" = "2",
+    "Spíše souhlasím" = "3",
+    "Rozhodně souhlasím" = "4"
+  )
+)
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_4')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_4}
+
+**Tyto otázky se týkají celé Tvojí třídy ve škole.**
+
+
+```{r}
+sd_question(
+  type   = "matrix",
+  id     = "Trida_postoje",
+  label  = "",
+  row    = c(
+    "Do jaké míry si tví spolužáci ve třídě myslí, že je důležité dělat věci lépe než ostatní?" = "01", 
+    "Do jaké míry si tví spolužáci ve třídě myslí, že je v pořádku vyčleňovat z kolektivů lidi, kteří jsou v něčem jiní?" = "02", 
+    "Do jaké míry si tví spolužáci ve třídě myslí, že když je někdo šikanován, tak by ses ho měl/a zastat?" = "03", 
+    "Do jaké míry si myslíš, že se tví spolužáci ve třídě nechovají k druhým lidem férově?" = "04", 
+    "Do jaké míry si tví spolužáci ve třídě myslí, že je v pořádku ubližovat někomu, pokud tím člověk něčeho dosáhne?" = "05", 
+    "Do jaké míry si tví spolužáci ve třídě myslí, že je v pořádku ubližovat někomu, pokud má člověk na někoho vztek?" = "06"
+  ),
+  option = c(
+    "Vůbec ne" = "0",
+    "Trochu"  = "1",
+    "Středně"  = "2",
+    "Celkem dost"  = "3",
+    "Úplně" = "4"
+  )
+)
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_5')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_5}
+
+**Online komunita je skupina lidí, kteří spolu interagují prostřednictvím digitálních platforem, jako jsou sociální sítě, diskuzní fóra, chatovací aplikace nebo specializované webové stránky. Tyto interakce mohou zahrnovat sdílení informací, diskuse na různá témata, vzájemnou podporu nebo spolupráci, ale také komunitu okolo oblíbeného influencera.**
+
+**Při vyplňování následujících položek prosím uvažuj o online komunitách, jejichž jsi součástí – ať už aktivně přispíváš, nebo pouze sleduješ dění.**
+
+
+```{r}
+sd_question(
+  type  = 'mc_multiple',
+  id    = 'Online_komunita_platformy',
+  label = "Které platformy využíváš pro interakci s online komunitami, do kterých patříš? (Můžeš vybrat více možností):",
+  option = c(
+    "Facebook",
+    "Instagram", 
+    "Twitter/X", 
+    "TikTok", 
+    "Snapchat", 
+    "Threads", 
+    "Reddit", 
+    "Pinterest", 
+    "Discord", 
+    "Twitch", 
+    "Steam", 
+    "Xbox Live", 
+    "PlayStation Network", 
+    "Roblox", 
+    "LinkedIn", 
+    "WhatsApp", 
+    "Signal", 
+    "Messenger", 
+    "Slack", 
+    "Telegram", 
+    "WeChat", 
+    "BeReal", 
+    "Youtube", 
+    "Google Classroom", 
+    "Jiné"
+  )
+)
+```
+
+
+```{r}
+sd_next(next_page = 'Vztahy_6')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_6}
+
+**Pomocí posuvníku označ, jak velká část tvé třídy podle Tebe zároveň patří do Tvé online komunity, přičemž 0 % znamená nikdo a 100 % znamená všichni.**
+
+```{r}
+sd_question(
+  type = "slider_numeric", 
+  id = 'Komunity_prunik',  
+  label = 'Jak velká část tvojí třídy patří zároveň do tvé online komunity?', 
+  option = seq(0, 100, 10)
+)
+```
+
+```{r}
+sd_next(next_page = 'Vztahy_7')
+```
+
+:::
+
+
+::: {.sd_page id=Vztahy_7}
+
+**Tyto otázky se týkají Tvé online komunity (influenceři, které sleduješ; online skupiny lidí, se kterými komunikuješ; všechny online chaty apod.).**
+
+```{r}
+sd_question(
+  type   = "matrix",
+  id     = "Online_komunita_postoje",
+  label  = "",
+  row    = c(
+    "Do jaké míry si tví členové online komunity myslí, že je důležité dělat věci lépe než ostatní?" = "01", 
+    "Do jaké míry si členové tvé online komunity myslí, že je v pořádku vyčleňovat z kolektivů lidi, kteří jsou v něčem jiní?" = "02", 
+    "Do jaké míry si členové tvé online komunity myslí, že když je někdo šikanován, tak by ses ho měl/a zastat?" = "03", 
+    "Do jaké míry si myslíš, že se členové tvé online komunity nechovají k druhým lidem férově?" = "04", 
+    "Do jaké míry si členové tvé online komunity myslí, že je v pořádku ublížit někomu online, pokud tím člověk něčeho dosáhne?" = "05", 
+    "Do jaké míry si členové tvé online komunity myslí, že je v pořádku ublížit někomu online, pokud na něj mají vztek?" = "06"
+  ),
+  option = c(
+    "Vůbec ne" = "0",
+    "Trochu"  = "1",
+    "Středně"  = "2",
+    "Celkem dost"  = "3",
+    "Úplně" = "4"
+  )
+)
+```
+
+
+```{r}
+sd_next(next_page = 'zaver')
+```
+
+:::
+
+
+::: {.sd_page id=zaver}
+
+**Možná chceme nějakou závěrečnou zprávu/poděkování na konci dotazníku?**
+
+```{r}
+sd_close()
+```
+
+:::
