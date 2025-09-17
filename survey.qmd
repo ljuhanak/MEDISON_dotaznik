@@ -21,54 +21,72 @@ library(surveydown)
 
 ```
 
-
-::: {.sd_page id=uvod}
-
-**Milá studentko / milý studente,**
-
-škola, kterou navštěvuješ se účastní společensky prospěšného výzkumu o umělé inteligenci (AI). Tohoto výzkumu se bude účastnit více než 5000 studentů z 50 středních škol.
-
-**Přínosy a rizika vyplývající z účasti na výzkumu**
-
-Výzkum ai-dolescence reaguje na vývoj technologií AI, které se staly součástí každodenního života moderní společnosti. Cílem výzkumu je zjistit, jak žáci tuto novou technologii vnímají a používají. Mimo to se však výzkum soustředí také na problematiku sociálních vztahů, včetně šikany, které s vývojem technologií mohou souviset. Výsledky výzkumu rozšíří poznatky o dopadech moderních technologií na vzdělávání v českých školách.
-
-**Účast v tomto výzkumu je dobrovolná a můžeš kdykoliv přestat.** Zajímá nás Tvůj názor a zkušenost. Odpovědi studentů získáváme pomocí dotazníku a zpracováváme anonymně. Pro zahájení dotazníku klikni na tlačítko níže.
-
-
-```{r}
-sd_next(next_page = 'info_souhlas')
-```
-
-:::
-
-
 ::: {.sd_page id=info_souhlas}
 
-## Informovaný souhlas
+## Souhlas s účastí ve výzkumu v projektu ai:dolescence
 
-Zde si Tě dovolujeme požádat o souhlas s tím, abys se zúčastnil/a pilotního šetření, jehož cílem je ověřit srozumitelnost a celkovou funkčnost dotazníku pro plánovaný výzkum na velkém vzorku škol. Text níže uvádí základní informace o tom, čemu se výzkum bude věnovat a jak bude probíhat.
+**OP:JAK MEDIS:ON Zprostředkovaná společnost podpořený MŠMT (CZ.02.01.01/00/23_025/0008713)**
 
-Uvedením svého jména a zvolením možnosti „Souhlasím“ na konci této stránky můžeš vyjádřit souhlas s účastí na tomto pilotním šetření a pokračovat k samotnému dotazníku. Zvolením možnosti „Nesouhlasím“ bude vyplňování dotazníku ukončeno.
+<div style="border: 2px solid black; padding: 10px; border-radius: 5px;">
+**Hlavní řešitel**: Tomáš Lintner, Ph.D., e-mail: tomas.lintner@mail.muni.cz, tel.: +420 771 296 248
+**Pracoviště:** Psychologický ústav AV ČR, v. v. i., Veveří 97, 602 00 Brno a Ústav pedagogických věd FF MU, Arna Nováka 1/1, 602 00 Brno  
+**Období řešení projektu: 10/2025 – 06/2026** </div>  
+<br>
 
-**Přínosy a rizika vyplývající z účasti na výzkumu**
+**Milá studentko, milý studente!** Máš možnost zapojit se do výzkumného projektu ai:dolescence, který zkoumá, jak mladí lidé rozumí umělé inteligenci (AI), jak ji používají při učení a jak fungují vztahy mezi spolužáky – jak ve třídě, tak online. Projekt vede tým výzkumníků z Masarykovy univerzity a Psychologického ústavu Akademie věd ČR.  
 
-Výzkum ai-dolescence reaguje na dramatický vývoj technologií, které se staly součástí každodenního života moderní společnosti. Rozvoj technologií založených na umělé inteligenci (AI) v posledních letech výrazně hýbe školstvím as velkou pravděpodobností bude formovat budoucnost vzdělávání. Cílem výzkumu je tedy zjistit, jak žáci tuto novou technologii vnímají, jak ji používají, a jaké mají v oblasti umělé inteligence znalosti a dovednosti. Mimo to se však výzkum soustředí také na problematiku šikany, která s nárůstem online komunikace a využívání digitálních nástrojů nabývá nových podob a souvislostí. Výsledky výzkumu rozšíří poznatky o dopadech technologií na vzdělávání a sociální klima ve školách.
+**Co se bude při účasti ve výzkumu dít?** Vyplníš **online dotazník** přímo ve škole, během vyučování, za přítomnosti učitele. Dotazník budeš vyplňovat **dvakrát** – s odstupem asi **8 měsíců** Dotazník obsahuje:  
 
-Účast ve výzkumu je dobrovolná, anonymizovaná a nepřináší žádná rizika, která by přesahovala rámec běžné školní výuky.
+* test AI gramotnosti (otázky s jednou správnou odpovědí),
+* otázky o tom, jak používáš AI (např. chatboty),
+* otázky o tvých vztazích se spolužáky (např. koho považuješ za kamaráda),
+* otázky o tvé třídě a o skupinách, kterých jsi součástí na internetu.  
 
-**Správa dat**
+Při odpovídání si vytvoříš jednoduchý **anonymní kód** založený na kombinaci písmen jména tvé matky a jména tvé(ho) třídní(ho) učitele/ky ze základní školy, díky kterému výzkumníci propojí tvoje odpovědi z první a druhé vlny výzkumu.  
 
-Data od účastníků výzkumu budou sbírána v tzv. pseudonymizované podobě. To znamená, že všechny identifikační údaje (např. jméno), které budou od účastníků výzkumu získány a které by mohly umožňovat identifikaci účastníka výzkumu, budou anonymizovány pomocí převedení na speciální alfanumerický kód tak, aby v průběhu projektu mohli výzkumníci propojit dotazníky od konkrétního účastníka napříč dvěma dotazováními bez potřeby znát jeho identitu či identitu třídy či školy, kterou navštěvuje. V jakékoli další práci s daty tak již nebudou k dispozici žádné identifikační údaje, nýbrž pouze uvedený alfanumerický kód.
+**V čem je to užitečné?** Zjistíme, **jak mladí lidé přemýšlí o umělé inteligenci** a jaké mají digitální dovednosti.
 
-Soubor obsahující převod identifikačních údajů na číselný kód (tzv. kódovací klíč) bude mít k dispozici pouze jeden z členů výzkumného týmu. Po ukončení sběru dat od všech účastníků bude kódovací klíč nenávratně smazán. Výsledná plně anonymizovaná data mohou být následně sdílena ve vědecké komunitě, výhradně za účelem vědeckého výzkumu.
+* Pomůžeš vytvořit **lepší nástroje a vzdělávací programy**, které budou mladým lidem pomáhat v orientaci ve světě technologií.
+* Na konci výzkumu dostaneš **zpětnou vazbu** – např. jak sis vedl/a v testu AI gramotnosti.  
 
-Pokud souhlasíš se svou účastí v našem výzkumu, vyplň prosím níže uvedené údaje. Pokud Ti ještě nebylo 18 let, požádali jsme o souhlas s účastí ve výzkumu i Tvé rodiče.
+**Existují nějaká rizika?** Výzkum **není náročný** ani nebezpečný.  
 
-S případnými dotazy se neváhej obrátit na vedoucího projektu na emailové adrese tomas.lintner@mail.muni.cz.
+* Možná tě některé otázky (např. o vztazích nebo šikaně) přimějí zamyslet se a mohou vyvolat mírný nepříjemný pocit.
+* U testových otázek s jednou správnou odpovědí můžeš cítit frustraci, když nebudeš znát odpověď – ale to je běžné, jako ve škole.
+* Učitel bude při dotazníku přítomen, aby ti v případě potřeby pomohl.
+* Učitelé budou proškoleni, jak nepohodlí zachytit a vhodně na něj reagovat.
 
-Děkujeme!
-Tomáš Lintner, Ph.D., vedoucí projektu
+**Jak se pracuje s osobními údaji?** V dotazníku **neuvádíš své jméno ani jiné přímé osobní údaje.**
 
+* Budeš pracovat pouze s anonymním kódem, který si sám vytvoříš
+* Seznam jmen ve třídě použijeme jen kvůli otázkám o spolužácích – **tento seznam bude bezpečně uložen a po druhém měření nenávratně smazán**
+* Odpovědi budou **anonymizované** a budou použity pouze pro výzkum, nikoli pro hodnocení ve škole.  
+
+**Dle Obecného nařízení o ochraně osobních údajů (EU 2016/679, GDPR)** máš právo: požadovat přístup k osobním údajům týkajícím se Tvé osoby, jejich opravu nebo výmaz, popřípadě omezení zpracování; podat stížnost dozorovému orgánu (Úřad pro ochranu osobních údajů) v případě, že se domníváš, že zpracování osobních údajů probíhá v rozporu s právními předpisy; souhlas se zpracováním osobních údajů udělený níže kdykoliv odvolat, aniž by za to hrozila jakákoliv sankce či znevýhodnění, a to oznámením na kontaktní údaje správce osobních údajů. Zákonnost zpracování údajů před odvoláním souhlasu tím není dotčena. Na základě výše uvedených informací zvolt, co platí:  
+
+```{r}
+sd_question(
+  type  = 'select',
+  id    = 'info_souhlas_1',
+  label = "*Souhlasím / Nesouhlasím* s účastí ve výzkumném projektu.",
+  option = c(
+    "Souhlasím" = "souhlasim",
+    "Nesouhlasím" = "nesouhlasim"
+  )
+)
+```
+
+```{r}
+sd_question(
+  type  = 'select',
+  id    = 'info_souhlas_2',
+  label = "*Souhlasím / Nesouhlasím* se zařazením do databáze pro další kolo výzkumu, které proběhne v květnu-červnu 2026.",
+  option = c(
+    "Souhlasím" = "souhlasim",
+    "Nesouhlasím" = "nesouhlasim"
+  )
+)
+```
 
 ```{r}
 sd_question(
@@ -78,43 +96,24 @@ sd_question(
 )
 ```
 
-
-**Vyjádření informovaného souhlasu s Vaší účastí ve výzkumu.**
-
 ```{r}
 sd_question(
   type  = 'select',
-  id    = 'info_souhlas_1',
-  label = "*Souhlasím / Nesouhlasím* se svou účastí v uvedeném výzkumném projektu a rozumím tomu, že účast je dobrovolná a že mohu souhlas odmítnout či odvolat.",
+  id    = 'vyber_skola',
+  label = "Škola:",
   option = c(
-    "Souhlasím" = "souhlasim",
-    "Nesouhlasím" = "nesouhlasim"
-  )
-)
+    "Škola 1" = "skola_1",
+    "Škola 2" = "skola_2",
+    "Škola 3" = "skola_3"
+  ) )
 ```
 
-
-**Osobní údaje, jako je věk, jméno či příjmení, které se budou v rámci dotazníku sbírat, budou v datech anonymizovány.**
-
-```{r}
-sd_question(
-  type  = 'select',
-  id    = 'info_souhlas_2',
-  label = "*Souhlasím / Nesouhlasím* s poskytnutím svých osobních údajů ve výše uvedeném rozsahu.",
-  option = c(
-    "Souhlasím" = "souhlasim",
-    "Nesouhlasím" = "nesouhlasim"
-  )
-)
-```
 
 
 ```{r}
 sd_next(next_page = 'demografie')
 ```
-
 :::
-
 
 ::: {.sd_page id=demografie}
 
