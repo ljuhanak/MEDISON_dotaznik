@@ -26,7 +26,7 @@ library(surveydown)
 
 **Milá studentko / milý studente,**
 
-škola, kterou navštěvuješ se účastní veřejně prospěšného výzkumu o umělé inteligenci (AI). Tohoto výzkumu se bude účastnit více než 5000 studentů z 50 středních škol.
+škola, kterou navštěvuješ se účastní společensky prospěšného výzkumu o umělé inteligenci (AI). Tohoto výzkumu se bude účastnit více než 5000 studentů z 50 středních škol.
 
 **Přínosy a rizika vyplývající z účasti na výzkumu**
 
