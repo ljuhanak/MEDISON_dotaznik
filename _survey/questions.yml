@@ -1,22 +1,28 @@
 # ! JUST READ - don't change the content of this file
 # Question structure extracted from survey.html
-jmeno:
-  type: text
-  label: Jméno a příjmení
 info_souhlas_1:
   type: select
-  label: Souhlasím / Nesouhlasím se svou účastí v uvedeném výzkumném projektu a rozumím
-    tomu, že účast je dobrovolná a že mohu souhlas odmítnout či odvolat.
+  label: Souhlasím / Nesouhlasím s účastí ve výzkumném projektu.
   options:
     Souhlasím: souhlasim
     Nesouhlasím: nesouhlasim
 info_souhlas_2:
   type: select
-  label: Souhlasím / Nesouhlasím s poskytnutím svých osobních údajů ve výše uvedeném
-    rozsahu.
+  label: Souhlasím / Nesouhlasím se zařazením do databáze pro další kolo výzkumu,
+    které proběhne v květnu-červnu 2026.
   options:
     Souhlasím: souhlasim
     Nesouhlasím: nesouhlasim
+jmeno:
+  type: text
+  label: Jméno a příjmení
+vyber_skola:
+  type: select
+  label: 'Škola:'
+  options:
+    Škola 1: skola_1
+    Škola 2: skola_2
+    Škola 3: skola_3
 gender:
   type: mc
   label: Jaké je Tvoje pohlaví?
@@ -67,19 +73,10 @@ pocet_pocitacu:
   label: Kolik máte doma počítačů? (počítají se stolní počítače a notebooky, které
     aktivně používáte) V případě, že žiješ ve více domácnostech, vyber tu, ve které
     trávíš více času.
-AIq1:
-  type: unknown
-  label: []
 AIq2:
   type: unknown
   label: []
 AIq3:
-  type: unknown
-  label: []
-AIq4:
-  type: unknown
-  label: []
-AIq5:
   type: unknown
   label: []
 AIq6:
@@ -94,22 +91,13 @@ AIq8:
 AIq9:
   type: unknown
   label: []
-AIq10:
-  type: unknown
-  label: []
 AIq11:
   type: unknown
   label: []
 AIq12:
   type: unknown
   label: []
-AIq13:
-  type: unknown
-  label: []
 AIq14:
-  type: unknown
-  label: []
-AIq15:
   type: unknown
   label: []
 AIq16:
@@ -118,31 +106,16 @@ AIq16:
 AIq17:
   type: unknown
   label: []
-AIq18:
-  type: unknown
-  label: []
 AIq19:
   type: unknown
   label: []
 AIq20:
   type: unknown
   label: []
-AIq21:
-  type: unknown
-  label: []
 AIq22:
   type: unknown
   label: []
 AIq23:
-  type: unknown
-  label: []
-AIq24:
-  type: unknown
-  label: []
-AIq25:
-  type: unknown
-  label: []
-AIq26:
   type: unknown
   label: []
 AIq27:
@@ -181,12 +154,6 @@ AIq37:
 AIq38:
   type: unknown
   label: []
-AIq39:
-  type: unknown
-  label: []
-AIq40:
-  type: unknown
-  label: []
 AIq41:
   type: unknown
   label: []
@@ -194,9 +161,6 @@ AIq42:
   type: unknown
   label: []
 AIq43:
-  type: unknown
-  label: []
-AIq44:
   type: unknown
   label: []
 AI_porozumeni:
@@ -305,13 +269,13 @@ AI_vztah_kruhy:
   type: mc
   label: Vyber ten obrázek, který nejlépe odpovídá Tvému vztahu s AI.
   options:
-    A: A
-    B: B
-    C: C
-    D: D
-    E: E
-    F: F
-    G: G
+    '1': '1'
+    '2': '2'
+    '3': '3'
+    '4': '4'
+    '5': '5'
+    '6': '6'
+    '7': '7'
 AI_attachment:
   type: matrix
   label: Přečti si následující tvrzení a zaškrtni, do jaké míry Tě vystihují.

@@ -113,7 +113,9 @@ sd_question(
 ```{r}
 sd_next(next_page = 'demografie')
 ```
+
 :::
+
 
 ::: {.sd_page id=demografie}
 
@@ -229,24 +231,17 @@ V této části nejde o Tvoje názory či postoje, na každou otázku existuje p
 
 Během vyplňování měj zavřená všechna ostatní okna a karty v prohlížeči. Odpovídej samostatně a bez pomoci internetu.
 
-
-```{r}
-sd_next(next_page = 'AItest1')
-```
-
+::: {.callout-note title="Upozornění"}
+**Ber na vědomí, že informace prezentované ve výzkumu nemusí být nutně pravdivé**
 :::
 
-::: {.sd_page id=AItest1}
-
-```{r}
-sd_output(id = "AIq1", type = "question")
-```
 
 ```{r}
 sd_next(next_page = 'AItest2')
 ```
 
 :::
+
 
 ::: {.sd_page id=AItest2}
 
@@ -267,34 +262,11 @@ sd_output(id = "AIq3", type = "question")
 ```
 
 ```{r}
-sd_next(next_page = 'AItest4')
-```
-
-:::
-
-::: {.sd_page id=AItest4}
-
-```{r}
-sd_output(id = "AIq4", type = "question")
-```
-
-```{r}
-sd_next(next_page = 'AItest5')
-```
-
-:::
-
-::: {.sd_page id=AItest5}
-
-```{r}
-sd_output(id = "AIq5", type = "question")
-```
-
-```{r}
 sd_next(next_page = 'AItest6')
 ```
 
 :::
+
 
 ::: {.sd_page id=AItest6}
 
@@ -339,18 +311,6 @@ sd_output(id = "AIq9", type = "question")
 ```
 
 ```{r}
-sd_next(next_page = 'AItest10')
-```
-
-:::
-
-::: {.sd_page id=AItest10}
-
-```{r}
-sd_output(id = "AIq10", type = "question")
-```
-
-```{r}
 sd_next(next_page = 'AItest11')
 ```
 
@@ -375,22 +335,12 @@ sd_output(id = "AIq12", type = "question")
 ```
 
 ```{r}
-sd_next(next_page = 'AItest13')
-```
-
-:::
-
-::: {.sd_page id=AItest13}
-
-```{r}
-sd_output(id = "AIq13", type = "question")
-```
-
-```{r}
 sd_next(next_page = 'AItest14')
 ```
 
 :::
+
+
 
 ::: {.sd_page id=AItest14}
 
@@ -399,22 +349,11 @@ sd_output(id = "AIq14", type = "question")
 ```
 
 ```{r}
-sd_next(next_page = 'AItest15')
-```
-
-:::
-
-::: {.sd_page id=AItest15}
-
-```{r}
-sd_output(id = "AIq15", type = "question")
-```
-
-```{r}
 sd_next(next_page = 'AItest16')
 ```
 
 :::
+
 
 ::: {.sd_page id=AItest16}
 
@@ -435,22 +374,11 @@ sd_output(id = "AIq17", type = "question")
 ```
 
 ```{r}
-sd_next(next_page = 'AItest18')
-```
-
-:::
-
-::: {.sd_page id=AItest18}
-
-```{r}
-sd_output(id = "AIq18", type = "question")
-```
-
-```{r}
 sd_next(next_page = 'AItest19')
 ```
 
 :::
+
 
 ::: {.sd_page id=AItest19}
 
@@ -471,22 +399,11 @@ sd_output(id = "AIq20", type = "question")
 ```
 
 ```{r}
-sd_next(next_page = 'AItest21')
-```
-
-:::
-
-::: {.sd_page id=AItest21}
-
-```{r}
-sd_output(id = "AIq21", type = "question")
-```
-
-```{r}
 sd_next(next_page = 'AItest22')
 ```
 
 :::
+
 
 ::: {.sd_page id=AItest22}
 
@@ -507,46 +424,11 @@ sd_output(id = "AIq23", type = "question")
 ```
 
 ```{r}
-sd_next(next_page = 'AItest24')
-```
-
-:::
-
-::: {.sd_page id=AItest24}
-
-```{r}
-sd_output(id = "AIq24", type = "question")
-```
-
-```{r}
-sd_next(next_page = 'AItest25')
-```
-
-:::
-
-::: {.sd_page id=AItest25}
-
-```{r}
-sd_output(id = "AIq25", type = "question")
-```
-
-```{r}
-sd_next(next_page = 'AItest26')
-```
-
-:::
-
-::: {.sd_page id=AItest26}
-
-```{r}
-sd_output(id = "AIq26", type = "question")
-```
-
-```{r}
 sd_next(next_page = 'AItest27')
 ```
 
 :::
+
 
 ::: {.sd_page id=AItest27}
 
@@ -687,34 +569,11 @@ sd_output(id = "AIq38", type = "question")
 ```
 
 ```{r}
-sd_next(next_page = 'AItest39')
-```
-
-:::
-
-::: {.sd_page id=AItest39}
-
-```{r}
-sd_output(id = "AIq39", type = "question")
-```
-
-```{r}
-sd_next(next_page = 'AItest40')
-```
-
-:::
-
-::: {.sd_page id=AItest40}
-
-```{r}
-sd_output(id = "AIq40", type = "question")
-```
-
-```{r}
 sd_next(next_page = 'AItest41')
 ```
 
 :::
+
 
 ::: {.sd_page id=AItest41}
 
@@ -735,7 +594,7 @@ sd_output(id = "AIq42", type = "question")
 ```
 
 ```{r}
-sd_next(next_page = 'AItest43')
+sd_next(next_page = 'AItest44')
 ```
 
 :::
@@ -751,19 +610,6 @@ sd_next(next_page = 'AItest44')
 ```
 
 :::
-
-::: {.sd_page id=AItest44}
-
-```{r}
-sd_output(id = "AIq44", type = "question")
-```
-
-```{r}
-sd_next(next_page = 'AIdalsi_pokyny')
-```
-
-:::
-
 
 
 ::: {.sd_page id=AIdalsi_pokyny}
@@ -882,7 +728,7 @@ sd_next(next_page = 'AIdalsi_3')
 
 ::: {.sd_page id=AIdalsi_3}
 
-**Prosím, vyber obrázek, který nejlépe popisuje Tvůj vztah s umělou inteligencí (AI). Na obrázku uvidíš dva kruhy – jeden reprezentuje „já” a druhý „AI”. Kroužky mohou mít různý stupeň překrytí, přičemž A znamená žádný překryv a G znamená úplný překryv.**
+**Prosím, vyber obrázek, který nejlépe popisuje Tvůj vztah s umělou inteligencí (AI). Na obrázku uvidíš dva kruhy – jeden reprezentuje „já” a druhý „AI”. Kroužky mohou mít různý stupeň překrytí, přičemž 1 znamená žádný překryv a 7 znamená úplný překryv.**
 
 ![](pic/AI_kruhy.png)
 
@@ -892,13 +738,13 @@ sd_question(
   id     = 'AI_vztah_kruhy',
   label  = "Vyber ten obrázek, který nejlépe odpovídá Tvému vztahu s AI.",
   option = c(
-    "A" = "A",
-    "B" = "B",
-    "C" = "C",
-    "D" = "D",
-    "E" = "E",
-    "F" = "F",
-    "G" = "G"
+    "1" = "1",
+    "2" = "2",
+    "3" = "3",
+    "4" = "4",
+    "5" = "5",
+    "6" = "6",
+    "7" = "7"
   )
 )
 ```
@@ -1030,7 +876,9 @@ sd_next(next_page = 'Vztahy_1a')
 
 **U každého z následujících výroků označ všechny své spolužáky a spolužačky, pro které výrok platí.** U každého výroku můžeš označit více lidí, ale také se může stát, že neoznačíš nikoho.
 
-**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+::: {.callout-note title="Upozornění"}
+**V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+:::
 
 
 ```{r}

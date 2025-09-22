@@ -162,28 +162,17 @@ server <- function(input, output, session) {
     
     
     # Vektor ID AI otázek náhodně zamíchaný
-    question_id <- sample(c("AIq1","AIq2","AIq3","AIq4","AIq5","AIq6","AIq7","AIq8","AIq9",
-                            "AIq10","AIq11","AIq12","AIq13","AIq14","AIq15","AIq16","AIq17","AIq18","AIq19",
-                            "AIq20","AIq21","AIq22","AIq23","AIq24","AIq25","AIq26","AIq27","AIq28","AIq29",
-                            "AIq30","AIq31","AIq32","AIq33","AIq34","AIq35","AIq36","AIq37","AIq38","AIq39",
-                            "AIq40","AIq41","AIq42","AIq43","AIq44"))
+    question_id <- sample(c("AIq2","AIq3","AIq6","AIq7","AIq8","AIq9",
+                            "AIq11","AIq12","AIq14","AIq16","AIq17","AIq19",
+                            "AIq20","AIq22","AIq23","AIq27","AIq28","AIq29",
+                            "AIq30","AIq31","AIq32","AIq33","AIq34","AIq35","AIq36","AIq37","AIq38",
+                            "AIq41","AIq42","AIq44"))
     
     # Pomocná funkce na zamíchání pořadí možností
     shuffle_opts <- function(x) x[sample.int(length(x))]
 
     
     # Definice AI otázek
-    sd_question(
-      id = question_id[1],
-      type = "mc",
-      label = "**Která z následujících možností nejlépe vystihuje pojem umělá inteligence (AI)?**",
-      option = shuffle_opts(c(
-        "Software, který dokáže nahradit lidskou mysl." = "A",
-        "Obor informatiky zabývající se tvorbou inteligentních systémů." = "B",
-        "Technologie, která se snaží zcela nahradit lidské rozhodování." = "C",
-        "Fyzický robot, který je schopný vnímat komplexní emoce včetně smutku. "    = "D"
-      ))
-    )
     
     sd_question(
       id = question_id[2],
@@ -209,41 +198,6 @@ server <- function(input, output, session) {
       ))
     )
     
-    sd_question(
-      id = question_id[4],
-      type = "mc",
-      label = "**Proč se systémy umělé inteligence chovají inteligentně?**",
-      option = shuffle_opts(c(
-        "Protože jsou vybaveny emulátory lidských emocí, což jim umožňuje reagovat adekvátně." = "A",
-        "Myslí autonomně a sledují své vlastní cíle." = "B",
-        "Byly naprogramovány tak, aby se snažily dosáhnout daného cíle co nejlépe."  = "C",
-        "Protože jejich architektura je identická s lidským mozkem, což jim umožňuje učit se a adaptovat se na nové situace." = "D"
-      ))
-    )
-    
-    sd_question(
-      id = question_id[5],
-      type = "mc",
-      label = "**Bylo Ti řečeno, že umělá inteligence dokáže myslet a rozhodovat se stejně jako lidé. Jaká je podle Tebe správná reakce?**",
-      option = shuffle_opts(c(
-        "Řekneš, že souhlasíš, protože AI dokáže napodobit lidské emoce a uvažování." = "A",
-        "Řekneš, že nesouhlasíš, protože AI zpracovává data statisticky a „nemyslí“ jako člověk." = "B",
-        "Řekneš, že souhlasíš, protože AI má vlastní vědomí stejně jako člověk."  = "C",
-        "Řekneš, že nesouhlasíš, AI generuje pouze obsah založený na datech, na kterých byla trénována." = "D"
-      ))
-    )
-    
-    sd_question(
-      id = question_id[6],
-      type = "mc",
-      label = "**Četl/a jsi článek o tom, že AI dokáže samostatně řídit auta. Co to nejspíš umožňuje?**",
-      option = shuffle_opts(c(
-        "Umělá inteligence si předem zapamatuje všechny možné scénáře jízdy." = "A",
-        "Umělá inteligence je naprogramována s pravidly if-else pro každou dopravní situaci." = "B",
-        "Umělá inteligence se učí na základě údajů ze senzorů, kamer a předchozích zkušeností."  = "C",
-        "Umělá inteligence se řídí instinkty a emocemi řidiče." = "D"
-      ))
-    )
     
     sd_question(
       id = question_id[7],
@@ -281,17 +235,6 @@ server <- function(input, output, session) {
       ))
     )
     
-    sd_question(
-      id = question_id[10],
-      type = "mc",
-      label = "**Která technologie AI se běžně používá ve virtuálních asistentech, jako jsou Siri a Alexa?**",
-      option = shuffle_opts(c(
-        "Počítačové vidění" = "A",
-        "Učení s posilováním" = "B",
-        "Zpracování přirozeného jazyka"  = "C",
-        "Blockchain" = "D"
-      ))
-    )
     
     sd_question(
       id = question_id[11],
@@ -317,17 +260,6 @@ server <- function(input, output, session) {
       ))
     )
     
-    sd_question(
-      id = question_id[13],
-      type = "mc",
-      label = "**Představ si, že chatuješ s AI asistentem na internetu. Jakou strategií bys mohl/a zkusit zjistit, zda komunikuješ s člověkem, nebo s umělou inteligencí?**",
-      option = shuffle_opts(c(
-        "Napíšu vtip, když přijde pobavená reakce, jedná se o člověka." = "A",
-        "Mohu položit obtížnou faktickou otázku, protože na ni může odpovědět pouze člověk-expert." = "B",
-        "Mohl/a bych v textu udělat několik překlepů, pak už mi AI nerozumí, ale člověk ano." = "C",
-        "Je možné, že to nepoznám, protože rozlišit AI od člověka někdy už nejde." = "D"
-      ))
-    )
     
     sd_question(
       id = question_id[14],
@@ -341,17 +273,6 @@ server <- function(input, output, session) {
       ))
     )
     
-    sd_question(
-      id = question_id[15],
-      type = "mc",
-      label = "**Používáš e-mailový filtr s AI, který mylně označuje důležité e-maily jako spam. Co by bylo nejlepší udělat?**",
-      option = shuffle_opts(c(
-        "Přestat používat filtry využívající AI a začít používat jiný filtr, který AI nevyužívá." = "A",
-        "Ručně označit chybně klasifikované e-maily jako 'není spam', aby se filtr postupně učil." = "B",
-        "Úplně odstranit filtr nevyžádané pošty, protože není stoprocentně spolehlivý." = "C",
-        "Restartovat počítač, aby se AI resetovala." = "D"
-      ))
-    )
     
     sd_question(
       id = question_id[16],
@@ -377,17 +298,6 @@ server <- function(input, output, session) {
       ))
     )
     
-    sd_question(
-      id = question_id[18],
-      type = "mc",
-      label = "**Proč je při trénování modelu AI důležitá kvalita použitých dat?**",
-      option = shuffle_opts(c(
-        "Umělá inteligence může během tréninku vždy opravit špatná data." = "A",
-        "Nekvalitní data mohou vést k nepřesným a zkresleným rozhodnutím." = "B",
-        "AI nepotřebuje ke svému efektivnímu fungování data." = "C",
-        "Modely AI se učí pouze z velkých souborů dat, nikoliv z kvalitních souborů dat." = "D"
-      ))
-    )
     
     sd_question(
       id = question_id[19],
@@ -413,17 +323,6 @@ server <- function(input, output, session) {
       ))
     )
     
-    sd_question(
-      id = question_id[21],
-      type = "mc",
-      label = "**Proč mohou systémy AI dosahovat užitečných výsledků?**",
-      option = shuffle_opts(c(
-        "Jejich práci často pozorují lidé a v případě potřeby je opravují." = "A",
-        "Myslí stejně jako lidé, ale jsou rychlejší." = "B",
-        "Dokážou se učit z velkého množství dat." = "C",
-        "Jsou odvozeny od expertních systémů, v nichž jsou uloženy expertní znalosti." = "D"
-      ))
-    )
     
     sd_question(
       id = question_id[22],
@@ -449,41 +348,6 @@ server <- function(input, output, session) {
       ))
     )
     
-    sd_question(
-      id = question_id[24],
-      type = "mc",
-      label = "**Testuješ model strojového učení, který má klasifikovat obrázky zvířat. Všimneš si, že model lépe rozpoznává kočky než psy. Jaký by to mohlo mít důvod?**",
-      option = shuffle_opts(c(
-        "Psy je obtížnější rozpoznat než kočky, protože na internetu je méně obrázků psů." = "A",
-        "Malé objekty (kočky) jsou lépe rozpoznávány než velké (psi)." = "B",
-        "Většina koček vypadá podobně, zatímco u psů existuje velké množství různých plemen." = "C",
-        "Tréninková data psů pro tento model nebyla reprezentativní pro všechna plemena psů." = "D"
-      ))
-    )
-    
-    sd_question(
-      id = question_id[25],
-      type = "mc",
-      label = "**Je třeba zajistit, aby model umělé inteligence po nasazení neprodukoval zkreslení. Co bys měl/a udělat?**",
-      option = shuffle_opts(c(
-        "Dopředu identifikovat většinu zdrojů zkreslení a z modelu je odstranit ještě před nasazením." = "A",
-        "Pravidelně testovat a aktualizovat model pomocí různorodých dat." = "B",
-        "Předpokládat, že objektivnost modelu je zaručena díky počátečnímu tréninku." = "C",
-        "Využít tzv. zpětnovazební učení, které generuje modely odolné vůči zkreslení." = "D"
-      ))
-    )
-    
-    sd_question(
-      id = question_id[26],
-      type = "mc",
-      label = "**Které dvě etické zásady jsou rozhodující pro zajištění toho, aby umělá inteligence nediskriminovala jednotlivce nebo skupiny?**",
-      option = shuffle_opts(c(
-        "Transparentnost a spravedlnost" = "A",
-        "Rovnost a férovost" = "B",
-        "Rychlost a transparentnost" = "C",
-        "Efektivita a férovost" = "D"
-      ))
-    )
     
     sd_question(
       id = question_id[27],
@@ -630,30 +494,6 @@ server <- function(input, output, session) {
     )
     
     sd_question(
-      id = question_id[39],
-      type = "mc",
-      label = "**Student se potřebuje naučit, jak vyřešit konkrétní typ matematické rovnice, a proto požádá AI o pomoc a vysvětlení, jak tyto rovnice řešit, ale vysvětlení je matoucí. Jaký je nejlepší způsob, jak zlepšit odpověď AI?**",
-      option = shuffle_opts(c(
-        "Požádat AI, aby poskytla příklady krok za krokem, aby objasnila vysvětlení." = "A",
-        "Opakovaně se ptát AI, aby vysvětlila matematický koncept a předpokládat, že AI nakonec poskytne jasnější odpověď." = "B",
-        "Požádat AI, aby zjednodušila vysvětlení, jako by to bylo pro malé dítě (lidé, kteří nic neví o matematice)." = "C",
-        "Požádat o správné řešení matematické rovnice bez potřeby vysvětlení." = "D"
-      ))
-    )
-    
-    sd_question(
-      id = question_id[40],
-      type = "mc",
-      label = "**Student použil AI při psaní eseje, ale dostal špatnou známku kvůli slabým argumentům a špatné struktuře. Student chce AI použít znovu, aby esej zlepšil. Jaký je nejlepší způsob, jak pokračovat?**",
-      option = shuffle_opts(c(
-        "Požádat AI, aby celý esej napsala sama a předpokládat, že AI bude schopna napsat lepší esej." = "A",
-        "Požádat AI o vyváženou zpětnou vazbu, ptát se na silné stránky i slabiny a poté použít tuto zpětnou vazbu k vedení dalších cílených úprav." = "B",
-        "Říct AI, aby esej upravila za využití sofistikovanějšího slovníku a předpokládat, že to zlepší kvalitu eseje." = "C",
-        "Požádat AI, aby napsala novou verzi eseje, ve které opraví všechny chyby uvedené ve zpětné vazbě od učitele." = "D"
-      ))
-    )
-    
-    sd_question(
       id = question_id[41],
       type = "mc",
       label = "**Student použije asistenta AI k výzkumu historické události, ale odpověď obsahuje fakt, který je v rozporu s jejich učebnicí. Jak by měl student vyhodnotit informace generované AI?**",
@@ -674,18 +514,6 @@ server <- function(input, output, session) {
         "Ano, protože AI je neutrální a činí objektivní rozhodnutí, zatímco náboroví specialisté (lidé) mohou udělat lidské chyby a ovlivnit doporučení." = "B",
         "Ne, protože doporučování pouze mužů jako uchazečů o práci zavádí předsudky a jakýkoli nástroj s předsudky by neměl být nikdy použit." = "C",
         "Ano, protože AI analyzovala mnohem více žádostí než jakýkoli náborový specialista (člověk) během jeho/její kariéry. Společnost by měla předpokládat, že doporučení AI jsou správná." = "D"
-      ))
-    )
-    
-    sd_question(
-      id = question_id[43],
-      type = "mc",
-      label = "**Škola zvažuje použití AI k hodnocení studentských esejů. Která z možností NENÍ příkladem etického problému, který z toho pramení?**",
-      option = shuffle_opts(c(
-        "AI by mohla posilovat předsudky a vést k nespravedlivému hodnocení studentů na základě stylu psaní spíše než obsahu." = "A",
-        "Texty esejů poskytnutých učitelem mohou být použity k dalšímu trénování AI modelů. V praxi to znamená, že informace poskytnuté AI mohou být v budoucnu doporučeny někomu jinému na světě, čímž může dojít ke zneužití osobních informací či krádeži intelektuálního vlastnictví." = "B",
-        "Nadměrné spoléhání na AI při hodnocení by mohlo snížit příležitost pro individuální zpětnou vazbu od učitelů." = "C",
-        "Využití AI by vedlo k netransparentnímu hodnocení, jelikož by nebylo zřejmé, jaká kritéria AI používá při hodnocení studentských prací." = "D"
       ))
     )
     

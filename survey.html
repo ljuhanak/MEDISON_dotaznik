@@ -480,54 +480,17 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Nyní Tě bude čekat test AI gramotnosti.</strong></p>
 <p>V této části nejde o Tvoje názory či postoje, na každou otázku existuje pouze jedna správná odpověď. Sesbíraná data budou anonymizována.</p>
 <p>Během vyplňování měj zavřená všechna ostatní okna a karty v prohlížeči. Odpovídej samostatně a bez pomoci internetu.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="AItest1" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
+<div class="callout callout-style-default callout-note callout-titled" title="Upozornění">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Upozornění
 </div>
 </div>
-</div>
-</div>
-<div id="AItest1" class="sd_page">
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-AIq1" data-question-id="AIq1" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('AIq1_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('AIq1_interacted', true, {priority: 'event'});">
-<div id="AIq1_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'AIq1', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
+<div class="callout-body-container callout-body">
+<p><strong>Ber na vědomí, že informace prezentované ve výzkumu nemusí být nutně pravdivé</strong></p>
 </div>
 </div>
 <div class="cell">
@@ -598,106 +561,6 @@ ul.task-list li input[type="checkbox"] {
 <script>
     $(document).ready(function() {
       var id = 'AIq3', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="AItest4" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="AItest4" class="sd_page">
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-AIq4" data-question-id="AIq4" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('AIq4_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('AIq4_interacted', true, {priority: 'event'});">
-<div id="AIq4_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'AIq4', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="AItest5" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="AItest5" class="sd_page">
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-AIq5" data-question-id="AIq5" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('AIq5_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('AIq5_interacted', true, {priority: 'event'});">
-<div id="AIq5_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'AIq5', key = 'surveydown_reactive_' + id;
 
       function save() {
         var content = $('#' + id).html();
@@ -932,56 +795,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div data-next-page="AItest10" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="AItest10" class="sd_page">
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-AIq10" data-question-id="AIq10" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('AIq10_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('AIq10_interacted', true, {priority: 'event'});">
-<div id="AIq10_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'AIq10', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
 <div data-next-page="AItest11" style="margin-top: 1rem; margin-bottom: 0.5rem;">
 <button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
 </div>
@@ -1082,56 +895,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div data-next-page="AItest13" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="AItest13" class="sd_page">
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-AIq13" data-question-id="AIq13" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('AIq13_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('AIq13_interacted', true, {priority: 'event'});">
-<div id="AIq13_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'AIq13', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
 <div data-next-page="AItest14" style="margin-top: 1rem; margin-bottom: 0.5rem;">
 <button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
 </div>
@@ -1148,56 +911,6 @@ ul.task-list li input[type="checkbox"] {
 <script>
     $(document).ready(function() {
       var id = 'AIq14', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="AItest15" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="AItest15" class="sd_page">
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-AIq15" data-question-id="AIq15" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('AIq15_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('AIq15_interacted', true, {priority: 'event'});">
-<div id="AIq15_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'AIq15', key = 'surveydown_reactive_' + id;
 
       function save() {
         var content = $('#' + id).html();
@@ -1332,56 +1045,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div data-next-page="AItest18" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="AItest18" class="sd_page">
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-AIq18" data-question-id="AIq18" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('AIq18_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('AIq18_interacted', true, {priority: 'event'});">
-<div id="AIq18_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'AIq18', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
 <div data-next-page="AItest19" style="margin-top: 1rem; margin-bottom: 0.5rem;">
 <button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
 </div>
@@ -1482,56 +1145,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div data-next-page="AItest21" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="AItest21" class="sd_page">
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-AIq21" data-question-id="AIq21" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('AIq21_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('AIq21_interacted', true, {priority: 'event'});">
-<div id="AIq21_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'AIq21', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
 <div data-next-page="AItest22" style="margin-top: 1rem; margin-bottom: 0.5rem;">
 <button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
 </div>
@@ -1598,156 +1211,6 @@ ul.task-list li input[type="checkbox"] {
 <script>
     $(document).ready(function() {
       var id = 'AIq23', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="AItest24" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="AItest24" class="sd_page">
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-AIq24" data-question-id="AIq24" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('AIq24_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('AIq24_interacted', true, {priority: 'event'});">
-<div id="AIq24_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'AIq24', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="AItest25" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="AItest25" class="sd_page">
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-AIq25" data-question-id="AIq25" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('AIq25_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('AIq25_interacted', true, {priority: 'event'});">
-<div id="AIq25_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'AIq25', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="AItest26" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="AItest26" class="sd_page">
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-AIq26" data-question-id="AIq26" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('AIq26_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('AIq26_interacted', true, {priority: 'event'});">
-<div id="AIq26_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'AIq26', key = 'surveydown_reactive_' + id;
 
       function save() {
         var content = $('#' + id).html();
@@ -2382,106 +1845,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div data-next-page="AItest39" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="AItest39" class="sd_page">
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-AIq39" data-question-id="AIq39" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('AIq39_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('AIq39_interacted', true, {priority: 'event'});">
-<div id="AIq39_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'AIq39', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="AItest40" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="AItest40" class="sd_page">
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-AIq40" data-question-id="AIq40" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('AIq40_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('AIq40_interacted', true, {priority: 'event'});">
-<div id="AIq40_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'AIq40', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
 <div data-next-page="AItest41" style="margin-top: 1rem; margin-bottom: 0.5rem;">
 <button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
 </div>
@@ -2582,7 +1945,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div data-next-page="AItest43" style="margin-top: 1rem; margin-bottom: 0.5rem;">
+<div data-next-page="AItest44" style="margin-top: 1rem; margin-bottom: 0.5rem;">
 <button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
 </div>
 </div>
@@ -2633,56 +1996,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 <div class="cell-output-display">
 <div data-next-page="AItest44" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="AItest44" class="sd_page">
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-AIq44" data-question-id="AIq44" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('AIq44_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('AIq44_interacted', true, {priority: 'event'});">
-<div id="AIq44_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'AIq44', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="AIdalsi_pokyny" style="margin-top: 1rem; margin-bottom: 0.5rem;">
 <button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
 </div>
 </div>
@@ -3028,7 +2341,7 @@ Využití AI k vytvoření fotek nebo obrázků pro školní účely (např. do 
 </div>
 </div>
 <div id="AIdalsi_3" class="sd_page">
-<p><strong>Prosím, vyber obrázek, který nejlépe popisuje Tvůj vztah s umělou inteligencí (AI). Na obrázku uvidíš dva kruhy – jeden reprezentuje „já” a druhý „AI”. Kroužky mohou mít různý stupeň překrytí, přičemž A znamená žádný překryv a G znamená úplný překryv.</strong></p>
+<p><strong>Prosím, vyber obrázek, který nejlépe popisuje Tvůj vztah s umělou inteligencí (AI). Na obrázku uvidíš dva kruhy – jeden reprezentuje „já” a druhý „AI”. Kroužky mohou mít různý stupeň překrytí, přičemž 1 znamená žádný překryv a 7 znamená úplný překryv.</strong></p>
 <p><img src="pic/AI_kruhy.png" class="img-fluid"></p>
 <div class="cell">
 <div class="cell-output-display">
@@ -3039,44 +2352,44 @@ Využití AI k vytvoření fotek nebo obrázků pro školní účely (např. do 
 <div class="shiny-options-group">
 <div class="radio">
 <label>
-<input type="radio" name="AI_vztah_kruhy" value="A">
-<span>A</span>
+<input type="radio" name="AI_vztah_kruhy" value="1">
+<span>1</span>
 </label>
 </div>
 <div class="radio">
 <label>
-<input type="radio" name="AI_vztah_kruhy" value="B">
-<span>B</span>
+<input type="radio" name="AI_vztah_kruhy" value="2">
+<span>2</span>
 </label>
 </div>
 <div class="radio">
 <label>
-<input type="radio" name="AI_vztah_kruhy" value="C">
-<span>C</span>
+<input type="radio" name="AI_vztah_kruhy" value="3">
+<span>3</span>
 </label>
 </div>
 <div class="radio">
 <label>
-<input type="radio" name="AI_vztah_kruhy" value="D">
-<span>D</span>
+<input type="radio" name="AI_vztah_kruhy" value="4">
+<span>4</span>
 </label>
 </div>
 <div class="radio">
 <label>
-<input type="radio" name="AI_vztah_kruhy" value="E">
-<span>E</span>
+<input type="radio" name="AI_vztah_kruhy" value="5">
+<span>5</span>
 </label>
 </div>
 <div class="radio">
 <label>
-<input type="radio" name="AI_vztah_kruhy" value="F">
-<span>F</span>
+<input type="radio" name="AI_vztah_kruhy" value="6">
+<span>6</span>
 </label>
 </div>
 <div class="radio">
 <label>
-<input type="radio" name="AI_vztah_kruhy" value="G">
-<span>G</span>
+<input type="radio" name="AI_vztah_kruhy" value="7">
+<span>7</span>
 </label>
 </div>
 </div>
@@ -3654,7 +2967,19 @@ Využití AI k vytvoření fotek nebo obrázků pro školní účely (např. do 
 <div id="Vztahy_1a" class="sd_page">
 <p><strong>V této části se budeme ptát na Tvoje vztahy se spolužáky a spolužačkami.</strong> Spolužákem či spolužačkou je myšlen člověk z tvé třídy.</p>
 <p><strong>U každého z následujících výroků označ všechny své spolužáky a spolužačky, pro které výrok platí.</strong> U každého výroku můžeš označit více lidí, ale také se může stát, že neoznačíš nikoho.</p>
-<p><strong>Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Upozornění">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Upozornění
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
+</div>
+</div>
 <div class="cell">
 <div class="cell-output-display no-overflow-x">
 <div id="container-SocMet_01" data-question-id="SocMet_01" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('SocMet_01_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('SocMet_01_interacted', true, {priority: 'event'});">
