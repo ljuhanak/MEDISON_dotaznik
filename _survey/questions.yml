@@ -6,23 +6,9 @@ info_souhlas_1:
   options:
     Souhlasím: souhlasim
     Nesouhlasím: nesouhlasim
-info_souhlas_2:
-  type: select
-  label: Souhlasím / Nesouhlasím se zařazením do databáze pro další kolo výzkumu,
-    které proběhne v květnu-červnu 2026.
-  options:
-    Souhlasím: souhlasim
-    Nesouhlasím: nesouhlasim
 jmeno:
   type: text
   label: Jméno a příjmení
-vyber_skola:
-  type: select
-  label: 'Škola:'
-  options:
-    Škola 1: skola_1
-    Škola 2: skola_2
-    Škola 3: skola_3
 gender:
   type: mc
   label: Jaké je Tvoje pohlaví?
@@ -470,42 +456,6 @@ SocMet_01:
   type: unknown
   label: []
 SocMet_02:
-  type: unknown
-  label: []
-SocMet_03:
-  type: unknown
-  label: []
-SocMet_04:
-  type: unknown
-  label: []
-SocMet_05:
-  type: unknown
-  label: []
-SocMet_06:
-  type: unknown
-  label: []
-SocMet_07:
-  type: unknown
-  label: []
-SocMet_08:
-  type: unknown
-  label: []
-SocMet_09:
-  type: unknown
-  label: []
-SocMet_10:
-  type: unknown
-  label: []
-SocMet_11:
-  type: unknown
-  label: []
-SocMet_12:
-  type: unknown
-  label: []
-SocMet_13:
-  type: unknown
-  label: []
-SocMet_14:
   type: unknown
   label: []
 Trida_situace:

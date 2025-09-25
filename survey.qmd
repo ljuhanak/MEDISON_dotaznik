@@ -76,39 +76,6 @@ sd_question(
 )
 ```
 
-```{r}
-sd_question(
-  type  = 'select',
-  id    = 'info_souhlas_2',
-  label = "*Souhlasím / Nesouhlasím* se zařazením do databáze pro další kolo výzkumu, které proběhne v květnu-červnu 2026.",
-  option = c(
-    "Souhlasím" = "souhlasim",
-    "Nesouhlasím" = "nesouhlasim"
-  )
-)
-```
-
-```{r}
-sd_question(
-  id    = "jmeno",
-  type  = "text",
-  label = "Jméno a příjmení"
-)
-```
-
-```{r}
-sd_question(
-  type  = 'select',
-  id    = 'vyber_skola',
-  label = "Škola:",
-  option = c(
-    "Škola 1" = "skola_1",
-    "Škola 2" = "skola_2",
-    "Škola 3" = "skola_3"
-  ) )
-```
-
-
 
 ```{r}
 sd_next(next_page = 'demografie')
@@ -231,7 +198,7 @@ V této části nejde o Tvoje názory či postoje, na každou otázku existuje p
 
 Během vyplňování měj zavřená všechna ostatní okna a karty v prohlížeči. Odpovídej samostatně a bez pomoci internetu.
 
-::: {.callout-note title="Upozornění"}
+::: {.callout-note title="Pozor!"}
 **Ber na vědomí, že informace prezentované ve výzkumu nemusí být nutně pravdivé**
 :::
 
@@ -874,12 +841,11 @@ sd_next(next_page = 'Vztahy_1a')
 
 **V této části se budeme ptát na Tvoje vztahy se spolužáky a spolužačkami.** Spolužákem či spolužačkou je myšlen člověk z tvé třídy.
 
-**U každého z následujících výroků označ všechny své spolužáky a spolužačky, pro které výrok platí.** U každého výroku můžeš označit více lidí, ale také se může stát, že neoznačíš nikoho.
+Označ jména spolužáků/spolužaček ze třídy,pro které platí následující výrok. Můžeš zvolit libovolný počet jmen. Na pořadí nezáleží.
 
 ::: {.callout-note title="Upozornění"}
-**V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
 :::
-
 
 ```{r}
 sd_output(id = "SocMet_01", type = "question")
@@ -890,233 +856,17 @@ sd_output(id = "SocMet_01", type = "question")
 sd_next(next_page = 'Vztahy_1b')
 ```
 
-:::
-
 
 ::: {.sd_page id=Vztahy_1b}
 
-**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
+Označ jména spolužáků/spolužaček ze třídy,pro které platí následující výrok. Můžeš zvolit libovolný počet jmen. Na pořadí nezáleží.
 
+::: {.callout-note title="Upozornění"}
 **Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
+:::
 
 ```{r}
 sd_output(id = "SocMet_02", type = "question")
-```
-
-
-```{r}
-sd_next(next_page = 'Vztahy_1c')
-```
-
-:::
-
-
-::: {.sd_page id=Vztahy_1c}
-
-**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
-
-**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
-
-```{r}
-sd_output(id = "SocMet_03", type = "question")
-```
-
-
-```{r}
-sd_next(next_page = 'Vztahy_1d')
-```
-
-:::
-
-
-::: {.sd_page id=Vztahy_1d}
-
-**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
-
-**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
-
-```{r}
-sd_output(id = "SocMet_04", type = "question")
-```
-
-
-```{r}
-sd_next(next_page = 'Vztahy_1e')
-```
-
-:::
-
-
-::: {.sd_page id=Vztahy_1e}
-
-**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
-
-**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
-
-```{r}
-sd_output(id = "SocMet_05", type = "question")
-```
-
-
-```{r}
-sd_next(next_page = 'Vztahy_1f')
-```
-
-:::
-
-
-::: {.sd_page id=Vztahy_1f}
-
-**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
-
-**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
-
-```{r}
-sd_output(id = "SocMet_06", type = "question")
-```
-
-
-```{r}
-sd_next(next_page = 'Vztahy_1g')
-```
-
-:::
-
-
-::: {.sd_page id=Vztahy_1g}
-
-**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
-
-**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
-
-```{r}
-sd_output(id = "SocMet_07", type = "question")
-```
-
-
-```{r}
-sd_next(next_page = 'Vztahy_1h')
-```
-
-:::
-
-
-::: {.sd_page id=Vztahy_1h}
-
-**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
-
-**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
-
-```{r}
-sd_output(id = "SocMet_08", type = "question")
-```
-
-
-```{r}
-sd_next(next_page = 'Vztahy_1i')
-```
-
-:::
-
-
-::: {.sd_page id=Vztahy_1i}
-
-**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
-
-**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
-
-```{r}
-sd_output(id = "SocMet_09", type = "question")
-```
-
-
-```{r}
-sd_next(next_page = 'Vztahy_1j')
-```
-
-:::
-
-
-::: {.sd_page id=Vztahy_1j}
-
-**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
-
-**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
-
-```{r}
-sd_output(id = "SocMet_10", type = "question")
-```
-
-
-```{r}
-sd_next(next_page = 'Vztahy_1k')
-```
-
-:::
-
-
-::: {.sd_page id=Vztahy_1k}
-
-**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
-
-**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
-
-```{r}
-sd_output(id = "SocMet_11", type = "question")
-```
-
-
-```{r}
-sd_next(next_page = 'Vztahy_1l')
-```
-
-:::
-
-
-::: {.sd_page id=Vztahy_1l}
-
-**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
-
-**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
-
-```{r}
-sd_output(id = "SocMet_12", type = "question")
-```
-
-
-```{r}
-sd_next(next_page = 'Vztahy_1m')
-```
-
-:::
-
-
-::: {.sd_page id=Vztahy_1m}
-
-**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
-
-**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
-
-```{r}
-sd_output(id = "SocMet_13", type = "question")
-```
-
-
-```{r}
-sd_next(next_page = 'Vztahy_1n')
-```
-
-:::
-
-
-::: {.sd_page id=Vztahy_1n}
-
-**Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.**
-
-**Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.**
-
-```{r}
-sd_output(id = "SocMet_14", type = "question")
 ```
 
 

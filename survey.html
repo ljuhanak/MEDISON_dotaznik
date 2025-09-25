@@ -116,47 +116,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-info_souhlas_2" data-question-id="info_souhlas_2" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('info_souhlas_2_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('info_souhlas_2_interacted', true, {priority: 'event'});">
-<div class="form-group shiny-input-container">
-<label class="control-label" id="info_souhlas_2-label" for="info_souhlas_2"><p><em>Souhlasím / Nesouhlasím</em> se zařazením do databáze pro další kolo výzkumu, které proběhne v květnu-červnu 2026.</p>
-</label>
-<div>
-<select id="info_souhlas_2" class="shiny-input-select"><option value="">Vyberte možnost...</option>
-<option value="souhlasim">Souhlasím</option>
-<option value="nesouhlasim">Nesouhlasím</option></select>
-<script type="application/json" data-for="info_souhlas_2">{"plugins":["selectize-plugin-a11y"]}</script>
-</div>
-</div>
-<span class="hidden-asterisk">*</span>
-</div>
-</div>
-</div>
-<div class="cell">
 <div class="cell-output-display">
 <div id="container-jmeno" data-question-id="jmeno" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('jmeno_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('jmeno_interacted', true, {priority: 'event'});">
 <div class="form-group shiny-input-container">
 <label class="control-label" id="jmeno-label" for="jmeno"><p>Jméno a příjmení</p>
 </label>
 <input id="jmeno" type="text" class="shiny-input-text form-control" value="" data-update-on="change">
-</div>
-<span class="hidden-asterisk">*</span>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-vyber_skola" data-question-id="vyber_skola" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('vyber_skola_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('vyber_skola_interacted', true, {priority: 'event'});">
-<div class="form-group shiny-input-container">
-<label class="control-label" id="vyber_skola-label" for="vyber_skola"><p>Škola:</p>
-</label>
-<div>
-<select id="vyber_skola" class="shiny-input-select"><option value="">Vyberte možnost...</option>
-<option value="skola_1">Škola 1</option>
-<option value="skola_2">Škola 2</option>
-<option value="skola_3">Škola 3</option></select>
-<script type="application/json" data-for="vyber_skola">{"plugins":["selectize-plugin-a11y"]}</script>
-</div>
 </div>
 <span class="hidden-asterisk">*</span>
 </div>
@@ -480,13 +445,13 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Nyní Tě bude čekat test AI gramotnosti.</strong></p>
 <p>V této části nejde o Tvoje názory či postoje, na každou otázku existuje pouze jedna správná odpověď. Sesbíraná data budou anonymizována.</p>
 <p>Během vyplňování měj zavřená všechna ostatní okna a karty v prohlížeči. Odpovídej samostatně a bez pomoci internetu.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Upozornění">
+<div class="callout callout-style-default callout-note callout-titled" title="Pozor!">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Upozornění
+Pozor!
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -2966,7 +2931,7 @@ Využití AI k vytvoření fotek nebo obrázků pro školní účely (např. do 
 </div>
 <div id="Vztahy_1a" class="sd_page">
 <p><strong>V této části se budeme ptát na Tvoje vztahy se spolužáky a spolužačkami.</strong> Spolužákem či spolužačkou je myšlen člověk z tvé třídy.</p>
-<p><strong>U každého z následujících výroků označ všechny své spolužáky a spolužačky, pro které výrok platí.</strong> U každého výroku můžeš označit více lidí, ale také se může stát, že neoznačíš nikoho.</p>
+<p>Označ jména spolužáků/spolužaček ze třídy,pro které platí násleudjící výrok. Můžeš zvolit libovolný počet jmen. Na pořadí nezáleží.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Upozornění">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2977,7 +2942,7 @@ Upozornění
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
+<p><strong>Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
 </div>
 </div>
 <div class="cell">
@@ -3028,10 +2993,21 @@ Upozornění
 </div>
 </div>
 </div>
-</div>
 <div id="Vztahy_1b" class="sd_page">
-<p><strong>Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.</strong></p>
+<p>Označ jména spolužáků/spolužaček ze třídy,pro které platí násleudjící výrok. Můžeš zvolit libovolný počet jmen. Na pořadí nezáleží.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Upozornění">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Upozornění
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p><strong>Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
+</div>
+</div>
 <div class="cell">
 <div class="cell-output-display no-overflow-x">
 <div id="container-SocMet_02" data-question-id="SocMet_02" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('SocMet_02_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('SocMet_02_interacted', true, {priority: 'event'});">
@@ -3041,630 +3017,6 @@ Upozornění
 <script>
     $(document).ready(function() {
       var id = 'SocMet_02', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="Vztahy_1c" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="Vztahy_1c" class="sd_page">
-<p><strong>Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.</strong></p>
-<p><strong>Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-SocMet_03" data-question-id="SocMet_03" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('SocMet_03_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('SocMet_03_interacted', true, {priority: 'event'});">
-<div id="SocMet_03_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'SocMet_03', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="Vztahy_1d" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="Vztahy_1d" class="sd_page">
-<p><strong>Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.</strong></p>
-<p><strong>Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-SocMet_04" data-question-id="SocMet_04" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('SocMet_04_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('SocMet_04_interacted', true, {priority: 'event'});">
-<div id="SocMet_04_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'SocMet_04', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="Vztahy_1e" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="Vztahy_1e" class="sd_page">
-<p><strong>Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.</strong></p>
-<p><strong>Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-SocMet_05" data-question-id="SocMet_05" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('SocMet_05_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('SocMet_05_interacted', true, {priority: 'event'});">
-<div id="SocMet_05_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'SocMet_05', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="Vztahy_1f" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="Vztahy_1f" class="sd_page">
-<p><strong>Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.</strong></p>
-<p><strong>Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-SocMet_06" data-question-id="SocMet_06" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('SocMet_06_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('SocMet_06_interacted', true, {priority: 'event'});">
-<div id="SocMet_06_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'SocMet_06', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="Vztahy_1g" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="Vztahy_1g" class="sd_page">
-<p><strong>Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.</strong></p>
-<p><strong>Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-SocMet_07" data-question-id="SocMet_07" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('SocMet_07_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('SocMet_07_interacted', true, {priority: 'event'});">
-<div id="SocMet_07_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'SocMet_07', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="Vztahy_1h" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="Vztahy_1h" class="sd_page">
-<p><strong>Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.</strong></p>
-<p><strong>Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-SocMet_08" data-question-id="SocMet_08" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('SocMet_08_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('SocMet_08_interacted', true, {priority: 'event'});">
-<div id="SocMet_08_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'SocMet_08', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="Vztahy_1i" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="Vztahy_1i" class="sd_page">
-<p><strong>Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.</strong></p>
-<p><strong>Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-SocMet_09" data-question-id="SocMet_09" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('SocMet_09_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('SocMet_09_interacted', true, {priority: 'event'});">
-<div id="SocMet_09_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'SocMet_09', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="Vztahy_1j" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="Vztahy_1j" class="sd_page">
-<p><strong>Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.</strong></p>
-<p><strong>Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-SocMet_10" data-question-id="SocMet_10" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('SocMet_10_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('SocMet_10_interacted', true, {priority: 'event'});">
-<div id="SocMet_10_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'SocMet_10', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="Vztahy_1k" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="Vztahy_1k" class="sd_page">
-<p><strong>Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.</strong></p>
-<p><strong>Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-SocMet_11" data-question-id="SocMet_11" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('SocMet_11_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('SocMet_11_interacted', true, {priority: 'event'});">
-<div id="SocMet_11_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'SocMet_11', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="Vztahy_1l" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="Vztahy_1l" class="sd_page">
-<p><strong>Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.</strong></p>
-<p><strong>Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-SocMet_12" data-question-id="SocMet_12" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('SocMet_12_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('SocMet_12_interacted', true, {priority: 'event'});">
-<div id="SocMet_12_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'SocMet_12', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="Vztahy_1m" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="Vztahy_1m" class="sd_page">
-<p><strong>Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.</strong></p>
-<p><strong>Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-SocMet_13" data-question-id="SocMet_13" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('SocMet_13_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('SocMet_13_interacted', true, {priority: 'event'});">
-<div id="SocMet_13_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'SocMet_13', key = 'surveydown_reactive_' + id;
-
-      function save() {
-        var content = $('#' + id).html();
-        if (content && content.trim()) {
-          try {
-            localStorage.setItem(key, content);
-          } catch(e) {
-            console.warn('Could not save to localStorage:', e);
-          }
-        }
-      }
-
-      function restore() {
-        try {
-          var saved = localStorage.getItem(key);
-          var el = $('#' + id);
-          if (saved && el.length && !el.html().trim()) {
-            el.html(saved);
-          }
-        } catch(e) {
-          console.warn('Could not restore from localStorage:', e);
-        }
-      }
-
-      setTimeout(restore, 100);
-      new MutationObserver(function() { setTimeout(save, 200); })
-        .observe(document.getElementById(id) || document.body, {childList: true, subtree: true});
-      $(window).on('beforeunload', save);
-    });
-    </script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div data-next-page="Vztahy_1n" style="margin-top: 1rem; margin-bottom: 0.5rem;">
-<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Další strana</button>
-</div>
-</div>
-</div>
-</div>
-<div id="Vztahy_1n" class="sd_page">
-<p><strong>Opět označ všechny své spolužáky a spolužačky, pro které platí následující výrok.</strong></p>
-<p><strong>Pozor: V seznamu jmen je také Tvoje jméno. Sebe prosím neoznačuj.</strong></p>
-<div class="cell">
-<div class="cell-output-display no-overflow-x">
-<div id="container-SocMet_14" data-question-id="SocMet_14" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('SocMet_14_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('SocMet_14_interacted', true, {priority: 'event'});">
-<div id="SocMet_14_question" class="shiny-html-output"></div>
-<span class="hidden-asterisk">*</span>
-</div>
-<script>
-    $(document).ready(function() {
-      var id = 'SocMet_14', key = 'surveydown_reactive_' + id;
 
       function save() {
         var content = $('#' + id).html();
@@ -4961,6 +4313,7 @@ Upozornění
         }
       });
     </script>
+</div>
 </div>
 </div>
 </div>

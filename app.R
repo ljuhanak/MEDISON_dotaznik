@@ -62,101 +62,18 @@ server <- function(input, output, session) {
     
     
     # Definice otázek pro sociometrii
+    
     sd_question(
       type  = 'mc_multiple_buttons',
       id    = 'SocMet_01',
-      label = "Kamarád/ka",
+      label = "Je to můj/moje kamarád/ka",
       option = aktualni_jmena
     )
     
     sd_question(
       type  = 'mc_multiple_buttons',
       id    = 'SocMet_02',
-      label = "Romantický/á partner/ka",
-      option = aktualni_jmena
-    )
-    
-    sd_question(
-      type  = 'mc_multiple_buttons',
-      id    = 'SocMet_03',
-      label = "Je to člověk, kterému říkám věci, které nechci, aby ostatní věděli",
-      option = aktualni_jmena
-    )
-    
-    sd_question(
-      type  = 'mc_multiple_buttons',
-      id    = 'SocMet_04',
-      label = "Je to člověk, na kterého spoléhám, když potřebuji rozveselit",
-      option = aktualni_jmena
-    )
-    
-    sd_question(
-      type  = 'mc_multiple_buttons',
-      id    = 'SocMet_05',
-      label = "Je to někdo, s kým mohu mluvit o osobních problémech",
-      option = aktualni_jmena
-    )
-    
-    sd_question(
-      type  = 'mc_multiple_buttons',
-      id    = 'SocMet_06',
-      label = "Půjčí mi věci, které potřebuji",
-      option = aktualni_jmena
-    )
-    
-    sd_question(
-      type  = 'mc_multiple_buttons',
-      id    = 'SocMet_07',
-      label = "Pomáháme si navzájem s prací do školy",
-      option = aktualni_jmena
-    )
-    
-    sd_question(
-      type  = 'mc_multiple_buttons',
-      id    = 'SocMet_08',
-      label = "Pomohl/a by mi, kdyby mi někdo způsoboval problémy",
-      option = aktualni_jmena
-    )
-    
-    sd_question(
-      type  = 'mc_multiple_buttons',
-      id    = 'SocMet_09',
-      label = "Nutí mě dělat věci, které chce on/ona",
-      option = aktualni_jmena
-    )
-    
-    sd_question(
-      type  = 'mc_multiple_buttons',
-      id    = 'SocMet_10',
-      label = "Říká mi zlé nebo hrubé věci",
-      option = aktualni_jmena
-    )
-    
-    sd_question(
-      type  = 'mc_multiple_buttons',
-      id    = 'SocMet_11',
-      label = "Bije mě, kopne mě, udeří mě, když je na mě naštvaný/á",
-      option = aktualni_jmena
-    )
-    
-    sd_question(
-      type  = 'mc_multiple_buttons',
-      id    = 'SocMet_12',
-      label = "Ignoruje mě, když je na mě naštvaný/á",
-      option = aktualni_jmena
-    )
-    
-    sd_question(
-      type  = 'mc_multiple_buttons',
-      id    = 'SocMet_13',
-      label = "Odstrkuje mě, když je na mě naštvaný/á",
-      option = aktualni_jmena
-    )
-    
-    sd_question(
-      type  = 'mc_multiple_buttons',
-      id    = 'SocMet_14',
-      label = "Chce, abych souhlasil/a se vším, co řekne",
+      label = "V žádném případě bych s ní/m nechtěl/a sedět v lavici",
       option = aktualni_jmena
     )
     
